@@ -1,0 +1,57 @@
+{
+  "overall": {
+    "recall@1": {
+      "A_semantic_only": 39.5,
+      "B_resolver_only": 93.0,
+      "C_hybrid": 96.0
+    },
+    "recall@3": {
+      "A_semantic_only": 44.0,
+      "B_resolver_only": 96.0,
+      "C_hybrid": 99.0
+    },
+    "recall@5": {
+      "A_semantic_only": 47.5,
+      "B_resolver_only": 96.0,
+      "C_hybrid": 99.5
+    },
+    "MRR": {
+      "A_semantic_only": 42.2,
+      "B_resolver_only": 94.3,
+      "C_hybrid": 97.5
+    }
+  },
+  "by_category": {
+    "A_semantic_only": {
+      "absent": 100.0,
+      "brand_common": 10.0,
+      "brand_rare": 20.0,
+      "brand_uncommon": 10.0,
+      "brand_very_common": 13.3,
+      "concept": 100.0,
+      "generic": 100.0,
+      "typo": 83.3
+    },
+    "B_resolver_only": {
+      "absent": 83.3,
+      "brand_common": 100.0,
+      "brand_rare": 100.0,
+      "brand_uncommon": 100.0,
+      "brand_very_common": 100.0,
+      "concept": 25.0,
+      "generic": 100.0,
+      "typo": 83.3
+    },
+    "C_hybrid": {
+      "absent": 83.3,
+      "brand_common": 100.0,
+      "brand_rare": 100.0,
+      "brand_uncommon": 100.0,
+      "brand_very_common": 100.0,
+      "concept": 100.0,
+      "generic": 100.0,
+      "typo": 100.0
+    }
+  },
+  "n_cases": 200
+}

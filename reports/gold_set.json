@@ -1,0 +1,1219 @@
+[
+  {
+    "query":"eofiles od",
+    "expected":"diethylcarbamazine",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"laspar",
+    "expected":"asparaginase",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"carnihenz",
+    "expected":"levo carnitine",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"noxprin",
+    "expected":"enoxaparin",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"s rise",
+    "expected":"vitamin d",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"entofoam nf",
+    "expected":"hydrocortisone",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"ostomod",
+    "expected":"diacerein",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"melo",
+    "expected":"meloxicam",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"neurototal",
+    "expected":"benfotiamine + folic acid",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"lamrest",
+    "expected":"melatonin",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"je shield sd vaccine",
+    "expected":"inactivated japanese encephalitis virus protein",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"alpha lari",
+    "expected":"arteether",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"etorapid p",
+    "expected":"etoricoxib + paracetamol",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"bronac",
+    "expected":"acetylcysteine",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"xigduo",
+    "expected":"dapagliflozin + metformin",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"lopdys",
+    "expected":"loperamide",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"coxcure",
+    "expected":"isoniazid + rifampicin",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"glinil m",
+    "expected":"glibenclamide + metformin",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"diocalm",
+    "expected":"promethazine",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"tadagra",
+    "expected":"tadalafil",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"ranitas dm",
+    "expected":"domperidone + ranitidine",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"ebersol",
+    "expected":"eberconazole",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"benidoc",
+    "expected":"benidipine",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"concor cor",
+    "expected":"bisoprolol",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"toppen it",
+    "expected":"itopride + pantoprazole",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"aspeeday",
+    "expected":"aspirin",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"pregnyl",
+    "expected":"human chorionic gonadotropin",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"acitrin",
+    "expected":"acitretin",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"staglob",
+    "expected":"sitagliptin",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"emit",
+    "expected":"prochlorperazine",
+    "category":"brand_rare",
+    "judge":"composition"
+  },
+  {
+    "query":"hergest",
+    "expected":"hydroxyprogesterone",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"myket zp shampoo",
+    "expected":"ketoconazole + zinc pyrithione",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"zitafer",
+    "expected":"iron sucrose",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"escer forte",
+    "expected":"escitalopram oxalate",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"olmetake h",
+    "expected":"hydrochlorothiazide + olmesartan medoxomil",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"mefunec d",
+    "expected":"drotaverine + mefenamic acid",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"olanof",
+    "expected":"olanzapine",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"metonita xl",
+    "expected":"metoprolol",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"aler fm",
+    "expected":"fexofenadine + montelukast",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"edomox c",
+    "expected":"amoxycillin + dicloxacillin",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"espram",
+    "expected":"escitalopram oxalate",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"esmodac",
+    "expected":"esomeprazole",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"fungixit t",
+    "expected":"terbinafine",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"novaten am",
+    "expected":"amlodipine + atenolol",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"cefcare",
+    "expected":"cefadroxil",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"atecard m",
+    "expected":"amlodipine + atenolol",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"grin o",
+    "expected":"nortriptyline + pregabalin",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"oxcure",
+    "expected":"oxcarbazepine",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"olmiwall h",
+    "expected":"hydrochlorothiazide + olmesartan medoxomil",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"gabaride nt",
+    "expected":"gabapentin + nortriptyline",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"cefact",
+    "expected":"cefalexin",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"lincof",
+    "expected":"bromhexine + guaifenesin",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"scabsafe plus",
+    "expected":"albendazole + ivermectin",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"xylojeev nasal",
+    "expected":"xylometazoline",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"tromap",
+    "expected":"paracetamol + tramadol",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"celtaxim",
+    "expected":"cefotaxime",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"zofixi az",
+    "expected":"azithromycin + cefixime",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"stopvom",
+    "expected":"domperidone",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"k druf",
+    "expected":"ketoconazole + zinc pyrithione",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"obitax",
+    "expected":"cefotaxime",
+    "category":"brand_uncommon",
+    "judge":"composition"
+  },
+  {
+    "query":"doflex",
+    "expected":"diclofenac",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"cadrob ls",
+    "expected":"levosulpiride + rabeprazole",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"apihill",
+    "expected":"cyproheptadine + tricholine",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"nikal",
+    "expected":"albendazole",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"dicrose mr",
+    "expected":"chlorzoxazone + diclofenac",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"n sanigest",
+    "expected":"progesterone",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"ventordyl expectorant",
+    "expected":"ambroxol + guaifenesin",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"niczole",
+    "expected":"omeprazole",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"temped",
+    "expected":"paracetamol",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"mesulid",
+    "expected":"nimesulide",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"molobarr",
+    "expected":"paracetamol",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"jetrab",
+    "expected":"rabeprazole",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"ayuser d",
+    "expected":"diclofenac + serratiopeptidase",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"rectomox",
+    "expected":"amoxycillin",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"ronyvert",
+    "expected":"betahistine",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"telicor",
+    "expected":"telmisartan",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"meveon p",
+    "expected":"methylcobalamin + pregabalin",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"flulin",
+    "expected":"luliconazole",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"vertico",
+    "expected":"betahistine",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"spncuf m",
+    "expected":"ambroxol + guaifenesin",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"cypril",
+    "expected":"cyproheptadine + tricholine",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"brifix cv",
+    "expected":"cefixime + clavulanic acid",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"mefmax p",
+    "expected":"mefenamic acid + paracetamol",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"telpine",
+    "expected":"telmisartan",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"sinocold",
+    "expected":"chlorpheniramine + paracetamol",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"unigest",
+    "expected":"progesterone",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"morefast sb",
+    "expected":"ceftriaxone + sulbactam",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"telminorm",
+    "expected":"telmisartan",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"cypro t",
+    "expected":"cyproheptadine + tricholine",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"triside",
+    "expected":"bromelain + trypsin",
+    "category":"brand_common",
+    "judge":"composition"
+  },
+  {
+    "query":"retopod",
+    "expected":"cefpodoxime proxetil",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"matglim",
+    "expected":"glimepiride + metformin",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"voxicef",
+    "expected":"ceftriaxone",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"acloheal mr",
+    "expected":"aceclofenac + paracetamol",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"omniset",
+    "expected":"ondansetron",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"cosapan d",
+    "expected":"domperidone + pantoprazole",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"moxcil cv",
+    "expected":"amoxycillin + clavulanic acid",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"zobit oz",
+    "expected":"ofloxacin + ornidazole",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"moxy plus cv",
+    "expected":"amoxycillin + clavulanic acid",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"infladent p",
+    "expected":"aceclofenac + paracetamol",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"azigold",
+    "expected":"azithromycin",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"vimopod",
+    "expected":"cefpodoxime proxetil",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"rd braun",
+    "expected":"domperidone + rabeprazole",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"cefnav",
+    "expected":"cefixime",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"bedoxim",
+    "expected":"cefpodoxime proxetil",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"esrox",
+    "expected":"cefuroxime",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"ament",
+    "expected":"amoxycillin + clavulanic acid",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"pangy",
+    "expected":"pantoprazole",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"abepride plus",
+    "expected":"glimepiride + metformin",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"cottace p",
+    "expected":"aceclofenac + paracetamol",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"rabenix d",
+    "expected":"domperidone + rabeprazole",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"relon",
+    "expected":"ondansetron",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"ortopan d",
+    "expected":"domperidone + pantoprazole",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"montair lc kid",
+    "expected":"levocetirizine + montelukast",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"azithrov",
+    "expected":"azithromycin",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"rhinopin",
+    "expected":"levocetirizine + montelukast",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"osfutuf",
+    "expected":"cefuroxime",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"nabton d",
+    "expected":"domperidone + rabeprazole",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"glimgos m",
+    "expected":"glimepiride + metformin",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"glimscan m",
+    "expected":"glimepiride + metformin",
+    "category":"brand_very_common",
+    "judge":"composition"
+  },
+  {
+    "query":"fenfluramine",
+    "expected":"fenfluramine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"loperamide",
+    "expected":"loperamide",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"tadalafil",
+    "expected":"tadalafil",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"ondansetron",
+    "expected":"ondansetron",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"treosulfan",
+    "expected":"treosulfan",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"mercaptopurine",
+    "expected":"mercaptopurine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"nitrofurantoin",
+    "expected":"nitrofurantoin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"repaglinide",
+    "expected":"repaglinide",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"paroxetine",
+    "expected":"paroxetine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"norethisterone enanthate",
+    "expected":"norethisterone enanthate",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"naltrexone",
+    "expected":"naltrexone",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"baricitinib",
+    "expected":"baricitinib",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"cefpodoxime proxetil",
+    "expected":"cefpodoxime proxetil",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"niacinamide",
+    "expected":"niacinamide",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"bacillus clausii",
+    "expected":"bacillus clausii",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"doxycycline",
+    "expected":"doxycycline",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"clofazimine",
+    "expected":"clofazimine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"molgramostim",
+    "expected":"molgramostim",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"capreomycin",
+    "expected":"capreomycin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"apraclonidine",
+    "expected":"apraclonidine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"benzonatate",
+    "expected":"benzonatate",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"iron sucrose",
+    "expected":"iron sucrose",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"xylitol",
+    "expected":"xylitol",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"mucopolysaccharide polysulfate",
+    "expected":"mucopolysaccharide polysulfate",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"maraviroc",
+    "expected":"maraviroc",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"troxerutin",
+    "expected":"troxerutin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"atazanavir",
+    "expected":"atazanavir",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"finerenone",
+    "expected":"finerenone",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"lafutidine",
+    "expected":"lafutidine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"ethamsylate",
+    "expected":"ethamsylate",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"galantamine",
+    "expected":"galantamine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"ofatumumab",
+    "expected":"ofatumumab",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"silver nano particles",
+    "expected":"silver nano particles",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"vitamin d",
+    "expected":"vitamin d",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"reboxetine",
+    "expected":"reboxetine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"tenecteplase",
+    "expected":"tenecteplase",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"trimebutine",
+    "expected":"trimebutine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"afatinib dimaleate",
+    "expected":"afatinib dimaleate",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"lactulose",
+    "expected":"lactulose",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"besifloxacin",
+    "expected":"besifloxacin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"altretamine",
+    "expected":"altretamine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"aliskiren",
+    "expected":"aliskiren",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"spiramycin",
+    "expected":"spiramycin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"pimecrolimus",
+    "expected":"pimecrolimus",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"yellow fever virus",
+    "expected":"yellow fever virus",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"bupropion",
+    "expected":"bupropion",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"enoxaparin",
+    "expected":"enoxaparin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"methoxsalen",
+    "expected":"methoxsalen",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"methylergometrine",
+    "expected":"methylergometrine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"didanosine",
+    "expected":"didanosine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"itolizumab",
+    "expected":"itolizumab",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"amoxycillin",
+    "expected":"amoxycillin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"lymecycline",
+    "expected":"lymecycline",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"iopamidol",
+    "expected":"iopamidol",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"zotepine",
+    "expected":"zotepine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"itopride",
+    "expected":"itopride",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"desloratadine",
+    "expected":"desloratadine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"omega fatty acid",
+    "expected":"omega fatty acid",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"nitrazepam",
+    "expected":"nitrazepam",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"pioglitazone",
+    "expected":"pioglitazone",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"side effects of amoxicilin",
+    "expected":"amoxycillin",
+    "category":"typo",
+    "judge":"composition"
+  },
+  {
+    "query":"side effects of paracetmol",
+    "expected":"paracetamol",
+    "category":"typo",
+    "judge":"composition"
+  },
+  {
+    "query":"side effects of metfromin",
+    "expected":"metformin",
+    "category":"typo",
+    "judge":"composition"
+  },
+  {
+    "query":"side effects of azithromicin",
+    "expected":"azithromycin",
+    "category":"typo",
+    "judge":"composition"
+  },
+  {
+    "query":"side effects of pantaprazole",
+    "expected":"pantoprazole",
+    "category":"typo",
+    "judge":"composition"
+  },
+  {
+    "query":"side effects of cetirizin",
+    "expected":"cetrizine",
+    "category":"typo",
+    "judge":"composition"
+  },
+  {
+    "query":"medicine for high blood pressure",
+    "expected":[
+      "CARDIAC"
+    ],
+    "category":"concept",
+    "judge":"class"
+  },
+  {
+    "query":"something for acidity and heartburn",
+    "expected":[
+      "GASTRO INTESTINAL"
+    ],
+    "category":"concept",
+    "judge":"class"
+  },
+  {
+    "query":"treatment for type 2 diabetes",
+    "expected":[
+      "ANTI DIABETIC"
+    ],
+    "category":"concept",
+    "judge":"class"
+  },
+  {
+    "query":"what helps with allergy and runny nose",
+    "expected":[
+      "RESPIRATORY"
+    ],
+    "category":"concept",
+    "judge":"class"
+  },
+  {
+    "query":"drug for bacterial infection",
+    "expected":[
+      "ANTI INFECTIVES"
+    ],
+    "category":"concept",
+    "judge":"class"
+  },
+  {
+    "query":"medicine for joint pain and inflammation",
+    "expected":[
+      "PAIN ANALGESICS"
+    ],
+    "category":"concept",
+    "judge":"class"
+  },
+  {
+    "query":"something for fungal skin infection",
+    "expected":[
+      "ANTI INFECTIVES",
+      "DERMA"
+    ],
+    "category":"concept",
+    "judge":"class"
+  },
+  {
+    "query":"treatment for depression",
+    "expected":[
+      "NEURO CNS"
+    ],
+    "category":"concept",
+    "judge":"class"
+  },
+  {
+    "query":"side effects of flibanserin",
+    "expected":null,
+    "category":"absent",
+    "judge":"refusal"
+  },
+  {
+    "query":"side effects of esketamine",
+    "expected":null,
+    "category":"absent",
+    "judge":"refusal"
+  },
+  {
+    "query":"side effects of lecanemab",
+    "expected":null,
+    "category":"absent",
+    "judge":"refusal"
+  },
+  {
+    "query":"side effects of tirzepatide",
+    "expected":null,
+    "category":"absent",
+    "judge":"refusal"
+  },
+  {
+    "query":"side effects of zuranolone",
+    "expected":null,
+    "category":"absent",
+    "judge":"refusal"
+  },
+  {
+    "query":"side effects of omaveloxolone",
+    "expected":null,
+    "category":"absent",
+    "judge":"refusal"
+  }
+]

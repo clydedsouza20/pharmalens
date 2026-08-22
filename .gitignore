@@ -1,0 +1,16 @@
+﻿# Data - never commit (CC BY-NC-SA licensed, and large)
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Models & caches
+*.npy
+.cache/
+
+# OS
+Thumbs.db
+.DS_Store
