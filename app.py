@@ -412,10 +412,18 @@ def ask(req: AskRequest):
             answer = None
             decision.reason += f" (generation failed: {type(e).__name__})"
 
-    # Only documents the ROUTER approved -- not retrieval's full top-k.
-    approved = set(decision.compositions) if decision.compositions else None
-    hits = [h for h in retrieval["hits"]
-            if approved is None or h["composition_key"] in approved]
+        # On REFUSE and SCOPE we deliberately return NO documents. The router
+    # decided these results should not be shown, and a client that ignored
+    # the route field could otherwise render unrelated drugs as an answer.
+    # That is the exact failure the router exists to prevent.
+    if decision.route in ("REFUSE", "SCOPE"):
+        hits = []
+    elif decision.compositions:
+        approved = set(decision.compositions)
+        hits = [h for h in retrieval["hits"]
+                if h["composition_key"] in approved]
+    else:
+        hits = retrieval["hits"]
 
     return AskResponse(
         question=req.question,
