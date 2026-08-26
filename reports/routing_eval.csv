@@ -1,0 +1,13 @@
+question,expected,got,pass,reason,conf,llm
+what are the side effects of Crocin,ANSWER,ANSWER,True,"single drug, confidence 0.92",0.92,True
+what is Pan D used for,ANSWER,ANSWER,True,"single drug, confidence 0.92",0.92,True
+side effects of flibanserin,REFUSE,REFUSE,True,no drug name resolved,0.0,False
+side effects of esketamine,ASSUME,ASSUME,True,fuzzy match 0.70: esketamine -> ketamine,0.7,True
+what are the side effects of amoxicilin,ASSUME,ANSWER,False,"single drug, confidence 0.95",0.95,True
+can I take Augmentin and Azithral together,PARTIAL,PARTIAL,True,"2 drugs, no interaction data",0.98,True
+how many tablets of Dolo should I take,SCOPE,SCOPE,True,clinical//advice-seeking phrasing,0.98,False
+should I stop taking amlodipine,SCOPE,SCOPE,True,clinical//advice-seeking phrasing,1.0,False
+is Dolo safe for my child,SCOPE,SCOPE,True,clinical//advice-seeking phrasing,0.98,False
+what is amoxycillin used for,ANSWER,ANSWER,True,"single drug, confidence 1.00",1.0,True
+medicine for high blood pressure,REFUSE,REFUSE,True,no drug name resolved,0.0,False
+tell me about noxprin,CLARIFY,CLARIFY,True,'noxprin' maps to 2 compositions,0.98,False

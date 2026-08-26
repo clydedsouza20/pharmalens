@@ -7,7 +7,7 @@ A_semantic_only,brand_rare,s rise,vitamin d,"['risedronate', 'risedronate + vita
 A_semantic_only,brand_rare,entofoam nf,hydrocortisone,"['enclomiphene', 'enalaprilat', 'enrofloxacin']",0.0,False,False,False,0.0
 A_semantic_only,brand_rare,ostomod,diacerein,"['osimertinib', 'fingolimod', 'alendronic acid + calcium']",0.0,False,False,False,0.0
 A_semantic_only,brand_rare,melo,meloxicam,"['meloxicam', 'melphalan', 'meloxicam + paracetamol']",0.0,True,True,True,1.0
-A_semantic_only,brand_rare,neurototal,benfotiamine + folic acid,"['neostigmine', 'rocuronium', 'etomidate']",0.0,False,False,False,0.0
+A_semantic_only,brand_rare,neurototal,benfotiamine + folic acid,"['ergoloid mesylates', 'neostigmine', 'rocuronium']",0.0,False,False,False,0.0
 A_semantic_only,brand_rare,lamrest,melatonin,"['lamotrigine', 'lamivudine', 'dolutegravir + lamivudine']",0.0,False,False,False,0.0
 A_semantic_only,brand_rare,je shield sd vaccine,inactivated japanese encephalitis virus protein,"['inactivated japanese encephalitis virus protein', 'diphtheria toxoid + haemophilus type b conjugate vaccine', 'diphtheria immune globulin + haemophilus type b conjugate vaccine']",0.0,True,True,True,1.0
 A_semantic_only,brand_rare,alpha lari,arteether,"['alpha lipoic acid', 'interferon alpha a', 'alpha amylase + pepsin']",0.0,False,False,False,0.0
@@ -27,7 +27,7 @@ A_semantic_only,brand_rare,toppen it,itopride + pantoprazole,"['topotecan', 'top
 A_semantic_only,brand_rare,aspeeday,aspirin,"['astemizole', 'aspirin + glycine', 'aspirin + isosorbide mononitrate']",0.0,False,False,True,0.2
 A_semantic_only,brand_rare,pregnyl,human chorionic gonadotropin,"['prenoxdiazine', 'prednicarbate', 'aceclofenac + pregabalin']",0.0,False,False,False,0.0
 A_semantic_only,brand_rare,acitrin,acitretin,"['acitretin', 'oxyfedrin', 'metoprolol + telmisartan']",0.0,True,True,True,1.0
-A_semantic_only,brand_rare,staglob,sitagliptin,"['sodium stibogluconate', 'stavudine', 'streptomycin']",0.0,False,False,False,0.0
+A_semantic_only,brand_rare,staglob,sitagliptin,"['sodium stibogluconate', 'strontium ranelate', 'stavudine']",0.0,False,False,False,0.0
 A_semantic_only,brand_rare,emit,prochlorperazine,"['recombinant human erythropoietin alfa', 'ethinyl estradiol + etonogestrel', 'cetilistat']",0.0,False,False,False,0.0
 A_semantic_only,brand_uncommon,hergest,hydroxyprogesterone,"['mometasone + tazarotene', 'mometasone', 'dienogest']",0.0,False,False,False,0.0
 A_semantic_only,brand_uncommon,myket zp shampoo,ketoconazole + zinc pyrithione,"['ciclopirox + zinc pyrithione', 'sertaconazole + zinc pyrithione', 'zileuton']",0.0,False,False,False,0.0
@@ -42,7 +42,7 @@ A_semantic_only,brand_uncommon,edomox c,amoxycillin + dicloxacillin,"['cefadroxi
 A_semantic_only,brand_uncommon,espram,escitalopram oxalate,"['escitalopram oxalate + l methyl folate', 'escitalopram oxalate + etizolam', 'esomeprazole + naproxen']",0.0,False,False,False,0.0
 A_semantic_only,brand_uncommon,esmodac,esomeprazole,"['esmolol', 'eslicarbazepine', 'escitalopram oxalate + l methyl folate']",0.0,False,False,False,0.0
 A_semantic_only,brand_uncommon,fungixit t,terbinafine,"['itraconazole + terbinafine', 'miconazole + triamcinolone', 'fluconazole + tinidazole']",0.0,False,False,False,0.0
-A_semantic_only,brand_uncommon,novaten am,amlodipine + atenolol,"['mometasone + tazarotene', 'metformin + nateglinide', 'netupitant + palonosetron']",0.0,False,False,False,0.0
+A_semantic_only,brand_uncommon,novaten am,amlodipine + atenolol,"['mometasone + tazarotene', 'netupitant + palonosetron', 'cinacalcet']",0.0,False,False,False,0.0
 A_semantic_only,brand_uncommon,cefcare,cefadroxil,"['cefditoren', 'ceftriaxone', 'cefpodoxime proxetil + cloxacillin']",0.0,False,False,False,0.0
 A_semantic_only,brand_uncommon,atecard m,amlodipine + atenolol,"['atenolol', 'escitalopram oxalate + etizolam', 'atenolol + indapamide']",0.0,False,False,False,0.0
 A_semantic_only,brand_uncommon,grin o,nortriptyline + pregabalin,"['lignocaine + tannic acid', 'ferrous bisglycinate + zinc bisglycinate', 'ferrous bisglycinate']",0.0,False,False,False,0.0
@@ -56,7 +56,7 @@ A_semantic_only,brand_uncommon,xylojeev nasal,xylometazoline,"['xylometazoline',
 A_semantic_only,brand_uncommon,tromap,paracetamol + tramadol,"['travoprost', 'timolol + travoprost', 'trospium']",0.0,False,False,False,0.0
 A_semantic_only,brand_uncommon,celtaxim,cefotaxime,"['cefixime + cloxacillin', 'cefotaxime', 'cefixime']",0.0,False,True,True,0.5
 A_semantic_only,brand_uncommon,zofixi az,azithromycin + cefixime,"['zopiclone', 'zolpidem', 'zidovudine']",0.0,False,False,False,0.0
-A_semantic_only,brand_uncommon,stopvom,domperidone,"['diclofenac + tranexamic acid', 'aztreonam', 'diethylcarbamazine']",0.0,False,False,False,0.0
+A_semantic_only,brand_uncommon,stopvom,domperidone,"['aztreonam', 'diethylcarbamazine', 'faropenem']",0.0,False,False,False,0.0
 A_semantic_only,brand_uncommon,k druf,ketoconazole + zinc pyrithione,"['ketoconazole + salicylic acid', 'vitamin k', 'dicloxacillin']",0.0,False,False,False,0.0
 A_semantic_only,brand_uncommon,obitax,cefotaxime,"['docetaxel', 'ozenoxacin', 'ephedrine + hydroxyzine']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,doflex,diclofenac,"['ambroxol + doxycycline', 'doxofylline', 'doxofylline + terbutaline']",0.0,False,False,False,0.0
@@ -73,18 +73,18 @@ A_semantic_only,brand_common,molobarr,paracetamol,"['mosapride + simethicone', '
 A_semantic_only,brand_common,jetrab,rabeprazole,"['acalabrutinib', 'vinblastine', 'trametinib']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,ayuser d,diclofenac + serratiopeptidase,"['vitamin a + vitamin d', 'vitamin d', 'ferrous ascorbate + vitamin d']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,rectomox,amoxycillin,"['recombinant human erythropoietin beta', 'deferoxamine', 'reteplase']",0.0,False,False,False,0.0
-A_semantic_only,brand_common,ronyvert,betahistine,"['oxyphenonium', 'ferrous bisglycinate', 'di iodohydroxyquinoline']",0.0,False,False,False,0.0
+A_semantic_only,brand_common,ronyvert,betahistine,"['oxyphenonium', 'ferrous bisglycinate', 'casirivimab + imdevimab']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,telicor,telmisartan,"['s amlodipine + telmisartan', 'telbivudine', 'efonidipine + telmisartan']",0.0,False,False,True,0.2
 A_semantic_only,brand_common,meveon p,methylcobalamin + pregabalin,"['mephenesin', 'mesna', 'mebeverine']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,flulin,luliconazole,"['flunarizine', 'fluocinolone acetonide + neomycin', 'triptorelin']",0.0,False,False,False,0.0
-A_semantic_only,brand_common,vertico,betahistine,"['vericiguat', 'vecuronium', 'verteporfin']",0.0,False,False,False,0.0
+A_semantic_only,brand_common,vertico,betahistine,"['vericiguat', 'verteporfin', 'betahistine + domperidone']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,spncuf m,ambroxol + guaifenesin,"['spiramycin', 'spironolactone', 'bromfenac']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,cypril,cyproheptadine + tricholine,"['cyclandelate', 'beta cyclodextrin + piroxicam', 'cyclopentolate']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,brifix cv,cefixime + clavulanic acid,"['lactobacillus brevis + lactobacillus salivarius', 'brimonidine + brinzolamide', 'brinzolamide']",0.0,False,False,True,0.25
 A_semantic_only,brand_common,mefmax p,mefenamic acid + paracetamol,"['metoclopramide + simethicone', 'hyoscine butylbromide + mefenamic acid', 'meclizine']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,telpine,telmisartan,"['efonidipine + telmisartan', 's amlodipine + telmisartan', 'azelnidipine + telmisartan']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,sinocold,chlorpheniramine + paracetamol,"['colfosceril palmitate', 'pidotimod', 'piribedil']",0.0,False,False,False,0.0
-A_semantic_only,brand_common,unigest,progesterone,"['sucralfate', 'isosorbide dinitrate', 'dimethicone + sucralfate']",0.0,False,False,False,0.0
+A_semantic_only,brand_common,unigest,progesterone,"['univestin', 'sucralfate', 'isosorbide dinitrate']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,morefast sb,ceftriaxone + sulbactam,"['silodosin + solifenacin', 'dutasteride + silodosin', 'colloidal bismuth subcitrate']",0.0,False,False,False,0.0
 A_semantic_only,brand_common,telminorm,telmisartan,"['s amlodipine + telmisartan', 'telmisartan', 'telbivudine']",0.0,False,True,True,0.5
 A_semantic_only,brand_common,cypro t,cyproheptadine + tricholine,"['cyproheptadine + peptone', 'cyproheptadine + lysine', 'choline + cyproheptadine']",0.0,False,False,False,0.0
@@ -107,7 +107,7 @@ A_semantic_only,brand_very_common,bedoxim,cefpodoxime proxetil,"['amoxycillin + 
 A_semantic_only,brand_very_common,esrox,cefuroxime,"['esomeprazole + naproxen', 'esomeprazole + itopride', 'eslicarbazepine']",0.0,False,False,False,0.0
 A_semantic_only,brand_very_common,ament,amoxycillin + clavulanic acid,"['ispaghula + mebeverine', 'amlodipine + bisoprolol', 'mebeverine']",0.0,False,False,False,0.0
 A_semantic_only,brand_very_common,pangy,pantoprazole,"['colfosceril palmitate', 'benzocaine + metronidazole', 'sodium monofluorophosphate + triclosan']",0.0,False,False,False,0.0
-A_semantic_only,brand_very_common,abepride plus,glimepiride + metformin,"['itopride + rabeprazole', 'aspirin + rosuvastatin', 'mosapride']",0.0,False,False,False,0.0
+A_semantic_only,brand_very_common,abepride plus,glimepiride + metformin,"['itopride + rabeprazole', 'abemaciclib', 'aspirin + rosuvastatin']",0.0,False,False,False,0.0
 A_semantic_only,brand_very_common,cottace p,aceclofenac + paracetamol,"['paracetamol + tapentadol', 'netupitant + palonosetron', 'cinacalcet']",0.0,False,False,False,0.0
 A_semantic_only,brand_very_common,rabenix d,domperidone + rabeprazole,"['cinitapride + rabeprazole', 'itopride + rabeprazole', 'domperidone + rabeprazole']",0.0,False,True,True,0.3333333333333333
 A_semantic_only,brand_very_common,relon,ondansetron,"['retapamulin', 'reteplase', 'remdesivir']",0.0,False,False,False,0.0
@@ -119,66 +119,66 @@ A_semantic_only,brand_very_common,osfutuf,cefuroxime,"['alendronic acid + calciu
 A_semantic_only,brand_very_common,nabton d,domperidone + rabeprazole,"['nimesulide + racemethionine', 'nalbuphine', 'nintedanib']",0.0,False,False,False,0.0
 A_semantic_only,brand_very_common,glimgos m,glimepiride + metformin,"['glimepiride', 'glatiramer', 'glimepiride + metformin']",0.0,False,True,True,0.3333333333333333
 A_semantic_only,brand_very_common,glimscan m,glimepiride + metformin,"['glimepiride', 'insulin glargine', 'glimepiride + metformin']",0.0,False,True,True,0.3333333333333333
-A_semantic_only,generic,fenfluramine,fenfluramine,"['fenfluramine', 'fenoverine', 'fenofibrate']",0.0,True,True,True,1.0
-A_semantic_only,generic,loperamide,loperamide,"['loperamide', 'dicyclomine + loperamide', 'loperamide + simethicone']",0.0,True,True,True,1.0
-A_semantic_only,generic,tadalafil,tadalafil,"['tadalafil', 'tadalafil ip', 'tadalafil + tamsulosin']",0.0,True,True,True,1.0
-A_semantic_only,generic,ondansetron,ondansetron,"['ondansetron', 'ondansetron + ranitidine', 'ondansetron + paracetamol']",0.0,True,True,True,1.0
-A_semantic_only,generic,treosulfan,treosulfan,"['treosulfan', 'tegafur + uracil', 'teriparatide']",0.0,True,True,True,1.0
-A_semantic_only,generic,mercaptopurine,mercaptopurine,"['mercaptopurine', 'chlorpheniramine + noscapine', 'meropenem']",0.0,True,True,True,1.0
-A_semantic_only,generic,nitrofurantoin,nitrofurantoin,"['nitrofurantoin', 'nitrofurazone', 'cranberry extract + nitrofurantoin']",0.0,True,True,True,1.0
-A_semantic_only,generic,repaglinide,repaglinide,"['repaglinide', 'metformin + repaglinide', 'repaglinide + voglibose']",0.0,True,True,True,1.0
-A_semantic_only,generic,paroxetine,paroxetine,"['paroxetine', 'etizolam + paroxetine', 'parecoxib']",0.0,True,True,True,1.0
-A_semantic_only,generic,norethisterone enanthate,norethisterone enanthate,"['norethisterone enanthate', 'norethisterone', 'dimethindene']",0.0,True,True,True,1.0
+A_semantic_only,generic,amineptine,amineptine,"['amineptine', 'flupirtine + paracetamol', 'ammonium chloride + diphenhydramine']",0.0,True,True,True,1.0
+A_semantic_only,generic,cefuroxime axetil,cefuroxime axetil,"['cefuroxime axetil', 'cefuroxime', 'cefuroxime + lactobacillus']",0.0,True,True,True,1.0
+A_semantic_only,generic,nitroglycerin,nitroglycerin,"['nitroglycerin', 'nitroprusside', 'nitrofurantoin']",0.0,True,True,True,1.0
+A_semantic_only,generic,magnesium bisglycinate,magnesium bisglycinate,"['magnesium bisglycinate', 'ferrous bisglycinate + zinc bisglycinate', 'ferrous bisglycinate']",0.0,True,True,True,1.0
+A_semantic_only,generic,tetrabenazine,tetrabenazine,"['tetrabenazine', 'tetracosactide', 'tetracycline']",0.0,True,True,True,1.0
+A_semantic_only,generic,dexlansoprazole,dexlansoprazole,"['dexlansoprazole', 'dexrabeprazole', 'ilaprazole']",0.0,True,True,True,1.0
+A_semantic_only,generic,clemastine,clemastine,"['clemastine', 'chlorocresol + clobetasol', 'clobetasol + clotrimazole']",0.0,True,True,True,1.0
+A_semantic_only,generic,mebeverine,mebeverine,"['mebeverine', 'ispaghula + mebeverine', 'chlordiazepoxide + mebeverine']",0.0,True,True,True,1.0
+A_semantic_only,generic,rituximab,rituximab,"['rituximab', 'rifabutin', 'metronidazole + rifaximin']",0.0,True,True,True,1.0
+A_semantic_only,generic,ferrous ascorbate,ferrous ascorbate,"['ferrous ascorbate', 'ferrous ascorbate + vitamin d', 'ferrous ascorbate + folic acid']",0.0,True,True,True,1.0
+A_semantic_only,generic,dactinomycin,dactinomycin,"['dactinomycin', 'daptomycin', 'daunorubicin']",0.0,True,True,True,1.0
+A_semantic_only,generic,etoricoxib,etoricoxib,"['etoricoxib + thiocolchicoside', 'etoricoxib + tolperisone', 'etoricoxib']",0.0,False,True,True,0.3333333333333333
+A_semantic_only,generic,adrenochrome monosemicarbazone,adrenochrome monosemicarbazone,"['adrenochrome monosemicarbazone', 'adrenochrome monosemicarbazone + rutin', 'dexrabeprazole + domperidone']",0.0,True,True,True,1.0
+A_semantic_only,generic,arsenic trioxide,arsenic trioxide,"['arsenic trioxide', 'aluminium hydroxide + dimethicone', 'sodium feredetate']",0.0,True,True,True,1.0
+A_semantic_only,generic,pramipexole,pramipexole,"['pramipexole', 'prucalopride', 'prasugrel']",0.0,True,True,True,1.0
+A_semantic_only,generic,di iodohydroxyquinoline,di iodohydroxyquinoline,"['di iodohydroxyquinoline', 'hydroxyquinolines', 'mefloquine']",0.0,True,True,True,1.0
+A_semantic_only,generic,pyrazinamide,pyrazinamide,"['pyrazinamide', 'pyrantel pamoate', 'albendazole + pyrantel pamoate']",0.0,True,True,True,1.0
+A_semantic_only,generic,pegylated recombinant human erythropoietin,pegylated recombinant human erythropoietin,"['pegylated recombinant human erythropoietin', 'recombinant human erythropoietin alfa', 'recombinant human erythropoietin beta']",0.0,True,True,True,1.0
+A_semantic_only,generic,polio vaccine,polio vaccine,"['polio vaccine', 'poliomyelitis virus type', 'pneumococcal polysaccharide vaccine']",0.0,True,True,True,1.0
+A_semantic_only,generic,insulin glulisine,insulin glulisine,"['insulin glulisine', 'insulin glargine', 'glimepiride + metformin']",0.0,True,True,True,1.0
+A_semantic_only,generic,cabozantinib,cabozantinib,"['cabozantinib', 'cabergoline', 'cabazitaxel']",0.0,True,True,True,1.0
+A_semantic_only,generic,mesalazine,mesalazine,"['mesalazine', 'hydralazine', 'hydralazine + isosorbide dinitrate']",0.0,True,True,True,1.0
+A_semantic_only,generic,conjugated estrogens,conjugated estrogens,"['conjugated estrogens', 'estradiol + testosterone propionate', 'dydrogesterone + estradiol']",0.0,True,True,True,1.0
+A_semantic_only,generic,hydroxyethyl starch,hydroxyethyl starch,"['hydroxyethyl starch', 'hydroxyethyl starch + sodium chloride', 'hydroxypropylmethylcellulose']",0.0,True,True,True,1.0
+A_semantic_only,generic,sulbactam,sulbactam,"['sulbactam', 'ampicillin + sulbactam', 'meropenem + sulbactam']",0.0,True,True,True,1.0
+A_semantic_only,generic,plerixafor,plerixafor,"['plerixafor', 'colfosceril palmitate', 'chlorocresol + clobetasol']",0.0,True,True,True,1.0
+A_semantic_only,generic,ferrous bisglycinate,ferrous bisglycinate,"['ferrous bisglycinate', 'ferrous bisglycinate + zinc bisglycinate', 'magnesium bisglycinate']",0.0,True,True,True,1.0
+A_semantic_only,generic,cisplatin,cisplatin,"['cisplatin', 'cisapride + methylpolysiloxane', 'carboplatin']",0.0,True,True,True,1.0
+A_semantic_only,generic,sodium hyaluronate,sodium hyaluronate,"['sodium hyaluronate', 'carboxymethylcellulose + sodium hyaluronate', 'collagen peptide + sodium hyaluronate']",0.0,True,True,True,1.0
+A_semantic_only,generic,teicoplanin,teicoplanin,"['teicoplanin', 'efonidipine + telmisartan', 'tetrahydrozoline']",0.0,True,True,True,1.0
+A_semantic_only,generic,succinyl choline chloride,succinyl choline chloride,"['succinyl choline chloride', 'cetalkonium chloride + choline salicylate', 'choline salicylate + lignocaine']",0.0,True,True,True,1.0
+A_semantic_only,generic,travoprost,travoprost,"['travoprost', 'timolol + travoprost', 'tropicamide']",0.0,True,True,True,1.0
+A_semantic_only,generic,carbocisteine,carbocisteine,"['carbocisteine', 'carbocisteine + cefalexin', 'carfilzomib']",0.0,True,True,True,1.0
+A_semantic_only,generic,pneumococcal polysaccharide conjugate vaccine,pneumococcal polysaccharide conjugate vaccine,"['pneumococcal polysaccharide conjugate vaccine', 'pneumococcal polysaccharide vaccine', 'pneumococcal valent conjugate vaccine']",0.0,True,True,True,1.0
+A_semantic_only,generic,calcium polystyrene sulphonate,calcium polystyrene sulphonate,"['calcium polystyrene sulphonate', 'polystyrene sulfonate', 'calcium lactate + luvistin']",0.0,True,True,True,1.0
+A_semantic_only,generic,kanamycin,kanamycin,"['kanamycin', 'natamycin', 'bromelain + mupirocin']",0.0,True,True,True,1.0
+A_semantic_only,generic,potassium magnesium,potassium magnesium,"['potassium magnesium', 'magnesium + potassium chloride', 'magnesium']",0.0,True,True,True,1.0
+A_semantic_only,generic,psoralen,psoralen,"['psoralen', 'aminobenzoic acid + methoxsalen', 'trioxasalen']",0.0,True,True,True,1.0
+A_semantic_only,generic,pipecuronium,pipecuronium,"['pipecuronium', 'vecuronium', 'pancuronium']",0.0,True,True,True,1.0
+A_semantic_only,generic,trazodone,trazodone,"['trazodone', 'climbazole', 'clotrimazole + miconazole']",0.0,True,True,True,1.0
+A_semantic_only,generic,zafirlukast,zafirlukast,"['zafirlukast', 'zaltoprofen', 'zaleplon']",0.0,True,True,True,1.0
+A_semantic_only,generic,progesterone,progesterone,"['progesterone', 'hydroxyprogesterone', 'dydrogesterone + estradiol']",0.0,True,True,True,1.0
+A_semantic_only,generic,tocilizumab,tocilizumab,"['tocilizumab', 'tolnaftate', 'tofacitinib']",0.0,True,True,True,1.0
+A_semantic_only,generic,minocycline,minocycline,"['minocycline', 'minodronic acid', 'aceclofenac + misoprostol']",0.0,True,True,True,1.0
+A_semantic_only,generic,sofosbuvir,sofosbuvir,"['sofosbuvir', 'ledipasvir + sofosbuvir', 'sofosbuvir + velpatasvir']",0.0,True,True,True,1.0
+A_semantic_only,generic,chlorzoxazone,chlorzoxazone,"['chlorzoxazone', 'chlorzoxazone + paracetamol', 'aceclofenac + chlorzoxazone']",0.0,True,True,True,1.0
+A_semantic_only,generic,betahistine,betahistine,"['betahistine', 'betahistine + vitamin d', 'betahistine + domperidone']",0.0,True,True,True,1.0
+A_semantic_only,generic,parecoxib,parecoxib,"['parecoxib', 'paroxetine', 'etoricoxib + pregabalin']",0.0,True,True,True,1.0
+A_semantic_only,generic,amtolmetin guacil,amtolmetin guacil,"['amtolmetin guacil', 'guaifenesin', 'guaifenesin + loratadine']",0.0,True,True,True,1.0
+A_semantic_only,generic,ephedrine,ephedrine,"['ephedrine', 'citric acid + ephedrine', 'ephedrine + hydroxyzine']",0.0,True,True,True,1.0
+A_semantic_only,generic,levo carnitine,levo carnitine,"['levo carnitine', 'levo carnitine + vitamin e', 'levo carnitine + methylcobalamin']",0.0,True,True,True,1.0
+A_semantic_only,generic,carbazochrome,carbazochrome,"['carbazochrome', 'carbimazole', 'benzocaine + metronidazole']",0.0,True,True,True,1.0
+A_semantic_only,generic,polyvinyl alcohol,polyvinyl alcohol,"['polyvinyl alcohol', 'isopropyl alcohol', 'polyethylene glycol + polyvinyl alcohol']",0.0,True,True,True,1.0
 A_semantic_only,generic,naltrexone,naltrexone,"['naltrexone', 'naloxone', 'buprenorphine + naloxone']",0.0,True,True,True,1.0
-A_semantic_only,generic,baricitinib,baricitinib,"['baricitinib', 'colloidal bismuth subcitrate', 'bortezomib']",0.0,True,True,True,1.0
-A_semantic_only,generic,cefpodoxime proxetil,cefpodoxime proxetil,"['cefpodoxime proxetil + cloxacillin', 'cefpodoxime proxetil + dicloxacillin', 'cefpodoxime proxetil + lactobacillus']",0.0,False,False,True,0.25
-A_semantic_only,generic,niacinamide,niacinamide,"['niacinamide', 'nilotinib', 'nizatidine']",0.0,True,True,True,1.0
-A_semantic_only,generic,bacillus clausii,bacillus clausii,"['bacillus clausii', 'bacillus calmette guerin strain', 'live freeze dried lactic acid bacteria and bifidobacteria']",0.0,True,True,True,1.0
-A_semantic_only,generic,doxycycline,doxycycline,"['doxycycline', 'doxycycline + vitamin c', 'doxycycline + lactobacillus']",0.0,True,True,True,1.0
-A_semantic_only,generic,clofazimine,clofazimine,"['clofazimine', 'clotrimazole + mometasone', 'chlorocresol + clobetasol']",0.0,True,True,True,1.0
-A_semantic_only,generic,molgramostim,molgramostim,"['molgramostim', 'mosapride + simethicone', 'dimethicone + mosapride']",0.0,True,True,True,1.0
-A_semantic_only,generic,capreomycin,capreomycin,"['capreomycin', 'streptomycin', 'clindamycin + tretinoin']",0.0,True,True,True,1.0
-A_semantic_only,generic,apraclonidine,apraclonidine,"['apraclonidine', 'aprotinin', 'aprepitant']",0.0,True,True,True,1.0
-A_semantic_only,generic,benzonatate,benzonatate,"['benzonatate', 'benzocaine', 'benzocaine + diclofenac']",0.0,True,True,True,1.0
-A_semantic_only,generic,iron sucrose,iron sucrose,"['iron sucrose', 'ferrous bisglycinate', 'ferric carboxymaltose']",0.0,True,True,True,1.0
-A_semantic_only,generic,xylitol,xylitol,"['xylitol', 'sorbitol + xylometazoline', 'xylometazoline']",0.0,True,True,True,1.0
-A_semantic_only,generic,mucopolysaccharide polysulfate,mucopolysaccharide polysulfate,"['mucopolysaccharide polysulfate', 'ammonium lactate + clobetasol', 'mupirocin + sucralfate']",0.0,True,True,True,1.0
-A_semantic_only,generic,maraviroc,maraviroc,"['maraviroc', 'ledipasvir + sofosbuvir', 'favipiravir']",0.0,True,True,True,1.0
-A_semantic_only,generic,troxerutin,troxerutin,"['troxerutin', 'calcium dobesilate + troxerutin', 'troxipide']",0.0,True,True,True,1.0
-A_semantic_only,generic,atazanavir,atazanavir,"['atazanavir', 'atazanavir + ritonavir', 'saquinavir']",0.0,True,True,True,1.0
-A_semantic_only,generic,finerenone,finerenone,"['finerenone', 'dimethicone + hydrocortisone', 'eplerenone + torasemide']",0.0,True,True,True,1.0
-A_semantic_only,generic,lafutidine,lafutidine,"['lafutidine', 'domperidone + lafutidine', 'fluocinolone acetonide + povidone iodine']",0.0,True,True,True,1.0
-A_semantic_only,generic,ethamsylate,ethamsylate,"['ethamsylate', 'ethamsylate + menadione', 'ethamsylate + tranexamic acid']",0.0,True,True,True,1.0
-A_semantic_only,generic,galantamine,galantamine,"['galantamine', 'neostigmine', 'gemcitabine + mannitol']",0.0,True,True,True,1.0
-A_semantic_only,generic,ofatumumab,ofatumumab,"['ofatumumab', 'panitumumab', 'tocilizumab']",0.0,True,True,True,1.0
-A_semantic_only,generic,silver nano particles,silver nano particles,"['silver nano particles', 'silver colloid', 'silver']",0.0,True,True,True,1.0
-A_semantic_only,generic,vitamin d,vitamin d,"['vitamin d', 'vitamin c + vitamin d', 'vitamin a + vitamin d']",0.0,True,True,True,1.0
-A_semantic_only,generic,reboxetine,reboxetine,"['reboxetine', 'retapamulin', 'reteplase']",0.0,True,True,True,1.0
-A_semantic_only,generic,tenecteplase,tenecteplase,"['tenecteplase', 'alpha amylase + pepsin', 'alteplase']",0.0,True,True,True,1.0
-A_semantic_only,generic,trimebutine,trimebutine,"['trimebutine', 'trimethoprim', 'trimethoprim combinations']",0.0,True,True,True,1.0
-A_semantic_only,generic,afatinib dimaleate,afatinib dimaleate,"['afatinib dimaleate', 'alpelisib', 'dasatinib']",0.0,True,True,True,1.0
-A_semantic_only,generic,lactulose,lactulose,"['lactulose', 'ispaghula + lactulose', 'lactitol']",0.0,True,True,True,1.0
-A_semantic_only,generic,besifloxacin,besifloxacin,"['besifloxacin', 'enrofloxacin', 'norfloxacin']",0.0,True,True,True,1.0
-A_semantic_only,generic,altretamine,altretamine,"['altretamine', 'embramine', 'entacapone']",0.0,True,True,True,1.0
-A_semantic_only,generic,aliskiren,aliskiren,"['aliskiren', 'aliskiren + hydrochlorothiazide', 'azelaic acid']",0.0,True,True,True,1.0
-A_semantic_only,generic,spiramycin,spiramycin,"['spiramycin', 'clindamycin + clotrimazole', 'bromelain + mupirocin']",0.0,True,True,True,1.0
-A_semantic_only,generic,pimecrolimus,pimecrolimus,"['pimecrolimus', 'alpha glycerylphosphorylcholine + piracetam', 'pidotimod']",0.0,True,True,True,1.0
-A_semantic_only,generic,yellow fever virus,yellow fever virus,"['yellow fever virus', 'molnupiravir', 'vi capsular polysaccharide of salmonella typhi']",0.0,True,True,True,1.0
-A_semantic_only,generic,bupropion,bupropion,"['bupropion', 'buprenorphine', 'buclizine']",0.0,True,True,True,1.0
-A_semantic_only,generic,enoxaparin,enoxaparin,"['enoxaparin', 'entacapone', 'enalaprilat']",0.0,True,True,True,1.0
-A_semantic_only,generic,methoxsalen,methoxsalen,"['methoxsalen', 'aminobenzoic acid + methoxsalen', 'methocarbamol']",0.0,True,True,True,1.0
-A_semantic_only,generic,methylergometrine,methylergometrine,"['methylergometrine', 'methylpolysiloxane', 'methylphenidate']",0.0,True,True,True,1.0
-A_semantic_only,generic,didanosine,didanosine,"['didanosine', 'didanosine + lamivudine', 'daunorubicin']",0.0,True,True,True,1.0
-A_semantic_only,generic,itolizumab,itolizumab,"['itolizumab', 'atezolizumab', 'pertuzumab']",0.0,True,True,True,1.0
-A_semantic_only,generic,amoxycillin,amoxycillin,"['amoxycillin', 'ambroxol + amoxycillin', 'amoxycillin + serratiopeptidase']",0.0,True,True,True,1.0
-A_semantic_only,generic,lymecycline,lymecycline,"['lymecycline', 'lynestrenol', 'cyproheptadine + lysine']",0.0,True,True,True,1.0
-A_semantic_only,generic,iopamidol,iopamidol,"['iopamidol', 'di iodohydroxyquinoline', 'iohexol']",0.0,True,True,True,1.0
-A_semantic_only,generic,zotepine,zotepine,"['zotepine', 'zopiclone', 'zolpidem']",0.0,True,True,True,1.0
-A_semantic_only,generic,itopride,itopride,"['itopride', 'itopride + omeprazole', 'itopride + methylpolysiloxane']",0.0,True,True,True,1.0
-A_semantic_only,generic,desloratadine,desloratadine,"['desloratadine', 'desloratadine + pseudoephedrine', 'acebrophylline + desloratadine']",0.0,True,True,True,1.0
-A_semantic_only,generic,omega fatty acid,omega fatty acid,"['omega fatty acid', 'alpha lipoic acid', 'coenzyme q + omega fatty acid']",0.0,True,True,True,1.0
-A_semantic_only,generic,nitrazepam,nitrazepam,"['nitrazepam', 'nimesulide + tinidazole', 'nizatidine']",0.0,True,True,True,1.0
-A_semantic_only,generic,pioglitazone,pioglitazone,"['pioglitazone', 'atorvastatin + pioglitazone', 'pioglitazone + teneligliptin']",0.0,True,True,True,1.0
+A_semantic_only,generic,carvedilol,carvedilol,"['carvedilol', 'carvedilol + ivabradine', 'atenolol + lercanidipine']",0.0,True,True,True,1.0
+A_semantic_only,generic,acetylcysteine,acetylcysteine,"['acetylcysteine', 'acetylcysteine + arginine', 'acetylcysteine + taurine']",0.0,True,True,True,1.0
+A_semantic_only,generic,romiplostim,romiplostim,"['romiplostim', 'lenograstim', 'milnacipran']",0.0,True,True,True,1.0
+A_semantic_only,generic,proanthocyanidin,proanthocyanidin,"['proanthocyanidin', 'proanthocyanidin + tranexamic acid', 'l arginine + proanthocyanidin']",0.0,True,True,True,1.0
+A_semantic_only,generic,deca peptide,deca peptide,"['deca peptide', 'collagen peptide', 'nandrolone decanoate']",0.0,True,True,True,1.0
+A_semantic_only,generic,bisacodyl,bisacodyl,"['bisacodyl', 'bisoprolol + hydrochlorothiazide', 'bisoprolol + s amlodipine']",0.0,True,True,True,1.0
 A_semantic_only,typo,side effects of amoxicilin,amoxycillin,"['amoxycillin + serratiopeptidase', 'ambroxol + amoxycillin', 'amoxycillin + pantoprazole']",0.0,False,False,True,0.25
 A_semantic_only,typo,side effects of paracetmol,paracetamol,"['oxyphenbutazone + paracetamol', 'paracetamol + tapentadol', 'paracetamol + thiocolchicoside']",0.0,False,False,True,0.2
 A_semantic_only,typo,side effects of metfromin,metformin,"['isosorbide mononitrate + metoprolol', 'dapagliflozin + metformin', 'atorvastatin + metformin']",0.0,False,False,False,0.0
@@ -319,70 +319,70 @@ B_resolver_only,brand_very_common,osfutuf,cefuroxime,['cefuroxime'],0.92,True,Tr
 B_resolver_only,brand_very_common,nabton d,domperidone + rabeprazole,['domperidone + rabeprazole'],0.98,True,True,True,1.0
 B_resolver_only,brand_very_common,glimgos m,glimepiride + metformin,['glimepiride + metformin'],0.92,True,True,True,1.0
 B_resolver_only,brand_very_common,glimscan m,glimepiride + metformin,['glimepiride + metformin'],0.92,True,True,True,1.0
-B_resolver_only,generic,fenfluramine,fenfluramine,['fenfluramine'],1.0,True,True,True,1.0
-B_resolver_only,generic,loperamide,loperamide,"['loperamide', 'beta cyclodextrin + loperamide', 'dicyclomine + loperamide']",1.0,True,True,True,1.0
-B_resolver_only,generic,tadalafil,tadalafil,"['tadalafil', 'ambrisentan + tadalafil', 'dapoxetine + tadalafil']",1.0,True,True,True,1.0
-B_resolver_only,generic,ondansetron,ondansetron,"['ondansetron', 'omeprazole + ondansetron', 'ondansetron + pantoprazole']",1.0,True,True,True,1.0
-B_resolver_only,generic,treosulfan,treosulfan,['treosulfan'],1.0,True,True,True,1.0
-B_resolver_only,generic,mercaptopurine,mercaptopurine,['mercaptopurine'],1.0,True,True,True,1.0
-B_resolver_only,generic,nitrofurantoin,nitrofurantoin,"['nitrofurantoin', 'cranberry extract + nitrofurantoin']",1.0,True,True,True,1.0
-B_resolver_only,generic,repaglinide,repaglinide,"['repaglinide', 'metformin + repaglinide', 'repaglinide + voglibose']",1.0,True,True,True,1.0
-B_resolver_only,generic,paroxetine,paroxetine,"['paroxetine', 'clonazepam + paroxetine', 'etizolam + paroxetine']",1.0,True,True,True,1.0
-B_resolver_only,generic,norethisterone enanthate,norethisterone enanthate,['norethisterone enanthate'],1.0,True,True,True,1.0
+B_resolver_only,generic,amineptine,amineptine,['amineptine'],1.0,True,True,True,1.0
+B_resolver_only,generic,cefuroxime axetil,cefuroxime axetil,['cefuroxime axetil'],1.0,True,True,True,1.0
+B_resolver_only,generic,nitroglycerin,nitroglycerin,['nitroglycerin'],1.0,True,True,True,1.0
+B_resolver_only,generic,magnesium bisglycinate,magnesium bisglycinate,['magnesium bisglycinate'],1.0,True,True,True,1.0
+B_resolver_only,generic,tetrabenazine,tetrabenazine,['tetrabenazine'],1.0,True,True,True,1.0
+B_resolver_only,generic,dexlansoprazole,dexlansoprazole,['dexlansoprazole'],1.0,True,True,True,1.0
+B_resolver_only,generic,clemastine,clemastine,['clemastine'],1.0,True,True,True,1.0
+B_resolver_only,generic,mebeverine,mebeverine,"['mebeverine', 'alprazolam + mebeverine', 'chlordiazepoxide + mebeverine']",1.0,True,True,True,1.0
+B_resolver_only,generic,rituximab,rituximab,['rituximab'],1.0,True,True,True,1.0
+B_resolver_only,generic,ferrous ascorbate,ferrous ascorbate,"['ferrous ascorbate', 'ferrous ascorbate + folic acid', 'ferrous ascorbate + vitamin d']",1.0,True,True,True,1.0
+B_resolver_only,generic,dactinomycin,dactinomycin,['dactinomycin'],1.0,True,True,True,1.0
+B_resolver_only,generic,etoricoxib,etoricoxib,"['etoricoxib', 'etoricoxib + linseed oil', 'etoricoxib + paracetamol']",1.0,True,True,True,1.0
+B_resolver_only,generic,adrenochrome monosemicarbazone,adrenochrome monosemicarbazone,"['adrenochrome monosemicarbazone', 'adrenochrome monosemicarbazone + rutin']",1.0,True,True,True,1.0
+B_resolver_only,generic,arsenic trioxide,arsenic trioxide,['arsenic trioxide'],1.0,True,True,True,1.0
+B_resolver_only,generic,pramipexole,pramipexole,['pramipexole'],1.0,True,True,True,1.0
+B_resolver_only,generic,di iodohydroxyquinoline,di iodohydroxyquinoline,['di iodohydroxyquinoline'],1.0,True,True,True,1.0
+B_resolver_only,generic,pyrazinamide,pyrazinamide,"['pyrazinamide', 'isoniazid + pyrazinamide']",1.0,True,True,True,1.0
+B_resolver_only,generic,pegylated recombinant human erythropoietin,pegylated recombinant human erythropoietin,['pegylated recombinant human erythropoietin'],1.0,True,True,True,1.0
+B_resolver_only,generic,polio vaccine,polio vaccine,['polio vaccine'],1.0,True,True,True,1.0
+B_resolver_only,generic,insulin glulisine,insulin glulisine,['insulin glulisine'],1.0,True,True,True,1.0
+B_resolver_only,generic,cabozantinib,cabozantinib,['cabozantinib'],1.0,True,True,True,1.0
+B_resolver_only,generic,mesalazine,mesalazine,['mesalazine'],1.0,True,True,True,1.0
+B_resolver_only,generic,conjugated estrogens,conjugated estrogens,['conjugated estrogens'],1.0,True,True,True,1.0
+B_resolver_only,generic,hydroxyethyl starch,hydroxyethyl starch,"['hydroxyethyl starch', 'hydroxyethyl starch + sodium chloride']",1.0,True,True,True,1.0
+B_resolver_only,generic,sulbactam,sulbactam,"['sulbactam', 'amoxycillin + sulbactam', 'ampicillin + sulbactam']",1.0,True,True,True,1.0
+B_resolver_only,generic,plerixafor,plerixafor,['plerixafor'],1.0,True,True,True,1.0
+B_resolver_only,generic,ferrous bisglycinate,ferrous bisglycinate,"['ferrous bisglycinate', 'ferrous bisglycinate + zinc bisglycinate']",1.0,True,True,True,1.0
+B_resolver_only,generic,cisplatin,cisplatin,['cisplatin'],1.0,True,True,True,1.0
+B_resolver_only,generic,sodium hyaluronate,sodium hyaluronate,"['sodium hyaluronate', 'carboxymethylcellulose + sodium hyaluronate', 'chondroitin + sodium hyaluronate']",1.0,True,True,True,1.0
+B_resolver_only,generic,teicoplanin,teicoplanin,['teicoplanin'],1.0,True,True,True,1.0
+B_resolver_only,generic,succinyl choline chloride,succinyl choline chloride,['succinyl choline chloride'],1.0,True,True,True,1.0
+B_resolver_only,generic,travoprost,travoprost,"['travoprost', 'timolol + travoprost']",1.0,True,True,True,1.0
+B_resolver_only,generic,carbocisteine,carbocisteine,"['carbocisteine', 'amoxycillin + carbocisteine', 'carbocisteine + cefalexin']",1.0,True,True,True,1.0
+B_resolver_only,generic,pneumococcal polysaccharide conjugate vaccine,pneumococcal polysaccharide conjugate vaccine,['pneumococcal polysaccharide conjugate vaccine'],1.0,True,True,True,1.0
+B_resolver_only,generic,calcium polystyrene sulphonate,calcium polystyrene sulphonate,['calcium polystyrene sulphonate'],1.0,True,True,True,1.0
+B_resolver_only,generic,kanamycin,kanamycin,['kanamycin'],1.0,True,True,True,1.0
+B_resolver_only,generic,potassium magnesium,potassium magnesium,"['potassium magnesium', 'potassium magnesium + vitamin b']",1.0,True,True,True,1.0
+B_resolver_only,generic,psoralen,psoralen,['psoralen'],1.0,True,True,True,1.0
+B_resolver_only,generic,pipecuronium,pipecuronium,['pipecuronium'],1.0,True,True,True,1.0
+B_resolver_only,generic,trazodone,trazodone,['trazodone'],1.0,True,True,True,1.0
+B_resolver_only,generic,zafirlukast,zafirlukast,['zafirlukast'],1.0,True,True,True,1.0
+B_resolver_only,generic,progesterone,progesterone,['progesterone'],1.0,True,True,True,1.0
+B_resolver_only,generic,tocilizumab,tocilizumab,['tocilizumab'],1.0,True,True,True,1.0
+B_resolver_only,generic,minocycline,minocycline,['minocycline'],1.0,True,True,True,1.0
+B_resolver_only,generic,sofosbuvir,sofosbuvir,"['sofosbuvir', 'daclatasvir + sofosbuvir', 'ledipasvir + sofosbuvir']",1.0,True,True,True,1.0
+B_resolver_only,generic,chlorzoxazone,chlorzoxazone,"['chlorzoxazone', 'aceclofenac + chlorzoxazone', 'chlorzoxazone + diclofenac']",1.0,True,True,True,1.0
+B_resolver_only,generic,betahistine,betahistine,"['betahistine', 'betahistine + domperidone', 'betahistine + ginkgo biloba']",1.0,True,True,True,1.0
+B_resolver_only,generic,parecoxib,parecoxib,['parecoxib'],1.0,True,True,True,1.0
+B_resolver_only,generic,amtolmetin guacil,amtolmetin guacil,['amtolmetin guacil'],1.0,True,True,True,1.0
+B_resolver_only,generic,ephedrine,ephedrine,"['ephedrine', 'citric acid + ephedrine', 'ephedrine + hydroxyzine']",1.0,True,True,True,1.0
+B_resolver_only,generic,levo carnitine,levo carnitine,"['levo carnitine', 'benfotiamine + levo carnitine', 'coenzyme q + levo carnitine']",1.0,True,True,True,1.0
+B_resolver_only,generic,carbazochrome,carbazochrome,['carbazochrome'],1.0,True,True,True,1.0
+B_resolver_only,generic,polyvinyl alcohol,polyvinyl alcohol,"['polyvinyl alcohol', 'polyethylene glycol + polyvinyl alcohol', 'polyvinyl alcohol + povidone iodine']",1.0,True,True,True,1.0
 B_resolver_only,generic,naltrexone,naltrexone,['naltrexone'],1.0,True,True,True,1.0
-B_resolver_only,generic,baricitinib,baricitinib,['baricitinib'],1.0,True,True,True,1.0
-B_resolver_only,generic,cefpodoxime proxetil,cefpodoxime proxetil,"['cefpodoxime proxetil', 'azithromycin + cefpodoxime proxetil', 'cefpodoxime proxetil + clavulanic acid']",1.0,True,True,True,1.0
-B_resolver_only,generic,niacinamide,niacinamide,"['niacinamide', 'clindamycin + niacinamide', 'methylcobalamin + niacinamide']",1.0,True,True,True,1.0
-B_resolver_only,generic,bacillus clausii,bacillus clausii,['bacillus clausii'],1.0,True,True,True,1.0
-B_resolver_only,generic,doxycycline,doxycycline,"['doxycycline', 'ambroxol + doxycycline', 'bromelain + doxycycline']",1.0,True,True,True,1.0
-B_resolver_only,generic,clofazimine,clofazimine,['clofazimine'],1.0,True,True,True,1.0
-B_resolver_only,generic,molgramostim,molgramostim,['molgramostim'],1.0,True,True,True,1.0
-B_resolver_only,generic,capreomycin,capreomycin,['capreomycin'],1.0,True,True,True,1.0
-B_resolver_only,generic,apraclonidine,apraclonidine,['apraclonidine'],1.0,True,True,True,1.0
-B_resolver_only,generic,benzonatate,benzonatate,['benzonatate'],1.0,True,True,True,1.0
-B_resolver_only,generic,iron sucrose,iron sucrose,['iron sucrose'],1.0,True,True,True,1.0
-B_resolver_only,generic,xylitol,xylitol,['xylitol'],1.0,True,True,True,1.0
-B_resolver_only,generic,mucopolysaccharide polysulfate,mucopolysaccharide polysulfate,['mucopolysaccharide polysulfate'],1.0,True,True,True,1.0
-B_resolver_only,generic,maraviroc,maraviroc,['maraviroc'],1.0,True,True,True,1.0
-B_resolver_only,generic,troxerutin,troxerutin,"['troxerutin', 'calcium dobesilate + troxerutin']",1.0,True,True,True,1.0
-B_resolver_only,generic,atazanavir,atazanavir,"['atazanavir', 'atazanavir + ritonavir']",1.0,True,True,True,1.0
-B_resolver_only,generic,finerenone,finerenone,['finerenone'],1.0,True,True,True,1.0
-B_resolver_only,generic,lafutidine,lafutidine,"['lafutidine', 'domperidone + lafutidine']",1.0,True,True,True,1.0
-B_resolver_only,generic,ethamsylate,ethamsylate,"['ethamsylate', 'drotaverine + ethamsylate', 'ethamsylate + mefenamic acid']",1.0,True,True,True,1.0
-B_resolver_only,generic,galantamine,galantamine,['galantamine'],1.0,True,True,True,1.0
-B_resolver_only,generic,ofatumumab,ofatumumab,['ofatumumab'],1.0,True,True,True,1.0
-B_resolver_only,generic,silver nano particles,silver nano particles,['silver nano particles'],1.0,True,True,True,1.0
-B_resolver_only,generic,vitamin d,vitamin d,"['vitamin d', 'alendronic acid + vitamin d', 'atorvastatin + vitamin d']",1.0,True,True,True,1.0
-B_resolver_only,generic,reboxetine,reboxetine,['reboxetine'],1.0,True,True,True,1.0
-B_resolver_only,generic,tenecteplase,tenecteplase,['tenecteplase'],1.0,True,True,True,1.0
-B_resolver_only,generic,trimebutine,trimebutine,['trimebutine'],1.0,True,True,True,1.0
-B_resolver_only,generic,afatinib dimaleate,afatinib dimaleate,['afatinib dimaleate'],1.0,True,True,True,1.0
-B_resolver_only,generic,lactulose,lactulose,"['lactulose', 'ispaghula + lactulose']",1.0,True,True,True,1.0
-B_resolver_only,generic,besifloxacin,besifloxacin,['besifloxacin'],1.0,True,True,True,1.0
-B_resolver_only,generic,altretamine,altretamine,['altretamine'],1.0,True,True,True,1.0
-B_resolver_only,generic,aliskiren,aliskiren,"['aliskiren', 'aliskiren + hydrochlorothiazide']",1.0,True,True,True,1.0
-B_resolver_only,generic,spiramycin,spiramycin,['spiramycin'],1.0,True,True,True,1.0
-B_resolver_only,generic,pimecrolimus,pimecrolimus,['pimecrolimus'],1.0,True,True,True,1.0
-B_resolver_only,generic,yellow fever virus,yellow fever virus,['yellow fever virus'],1.0,True,True,True,1.0
-B_resolver_only,generic,bupropion,bupropion,['bupropion'],1.0,True,True,True,1.0
-B_resolver_only,generic,enoxaparin,enoxaparin,['enoxaparin'],1.0,True,True,True,1.0
-B_resolver_only,generic,methoxsalen,methoxsalen,"['methoxsalen', 'aminobenzoic acid + methoxsalen']",1.0,True,True,True,1.0
-B_resolver_only,generic,methylergometrine,methylergometrine,['methylergometrine'],1.0,True,True,True,1.0
-B_resolver_only,generic,didanosine,didanosine,"['didanosine', 'didanosine + lamivudine']",1.0,True,True,True,1.0
-B_resolver_only,generic,itolizumab,itolizumab,['itolizumab'],1.0,True,True,True,1.0
-B_resolver_only,generic,amoxycillin,amoxycillin,"['amoxycillin', 'ambroxol + amoxycillin', 'amoxycillin + bromhexine']",1.0,True,True,True,1.0
-B_resolver_only,generic,lymecycline,lymecycline,['lymecycline'],1.0,True,True,True,1.0
-B_resolver_only,generic,iopamidol,iopamidol,['iopamidol'],1.0,True,True,True,1.0
-B_resolver_only,generic,zotepine,zotepine,['zotepine'],1.0,True,True,True,1.0
-B_resolver_only,generic,itopride,itopride,"['itopride', 'esomeprazole + itopride', 'itopride + methylpolysiloxane']",1.0,True,True,True,1.0
-B_resolver_only,generic,desloratadine,desloratadine,"['desloratadine', 'acebrophylline + desloratadine', 'ambroxol + desloratadine']",1.0,True,True,True,1.0
-B_resolver_only,generic,omega fatty acid,omega fatty acid,"['omega fatty acid', 'coenzyme q + omega fatty acid']",1.0,True,True,True,1.0
-B_resolver_only,generic,nitrazepam,nitrazepam,['nitrazepam'],1.0,True,True,True,1.0
-B_resolver_only,generic,pioglitazone,pioglitazone,"['pioglitazone', 'atorvastatin + pioglitazone', 'gliclazide + pioglitazone']",1.0,True,True,True,1.0
-B_resolver_only,typo,side effects of amoxicilin,amoxycillin,[],0.0,False,False,False,0.0
+B_resolver_only,generic,carvedilol,carvedilol,"['carvedilol', 'carvedilol + ivabradine']",1.0,True,True,True,1.0
+B_resolver_only,generic,acetylcysteine,acetylcysteine,"['acetylcysteine', 'acebrophylline + acetylcysteine', 'acetylcysteine + ambroxol']",1.0,True,True,True,1.0
+B_resolver_only,generic,romiplostim,romiplostim,['romiplostim'],1.0,True,True,True,1.0
+B_resolver_only,generic,proanthocyanidin,proanthocyanidin,"['proanthocyanidin', 'l arginine + proanthocyanidin', 'polypodium leucotomos extract + proanthocyanidin']",1.0,True,True,True,1.0
+B_resolver_only,generic,deca peptide,deca peptide,['deca peptide'],1.0,True,True,True,1.0
+B_resolver_only,generic,bisacodyl,bisacodyl,['bisacodyl'],1.0,True,True,True,1.0
+B_resolver_only,typo,side effects of amoxicilin,amoxycillin,"['ambroxol + amoxycillin', 'amoxycillin', 'amoxycillin + bromhexine']",0.95,False,True,True,0.5
 B_resolver_only,typo,side effects of paracetmol,paracetamol,"['paracetamol', 'aceclofenac + paracetamol', 'alprazolam + paracetamol']",0.7,True,True,True,1.0
 B_resolver_only,typo,side effects of metfromin,metformin,"['metformin', 'acarbose + metformin', 'alogliptin + metformin']",0.7,True,True,True,1.0
-B_resolver_only,typo,side effects of azithromicin,azithromycin,"['azithromycin', 'adapalene + azithromycin', 'ambroxol + azithromycin']",0.7,True,True,True,1.0
+B_resolver_only,typo,side effects of azithromicin,azithromycin,"['adapalene + azithromycin', 'ambroxol + azithromycin', 'azithromycin']",0.95,False,True,True,0.3333333333333333
 B_resolver_only,typo,side effects of pantaprazole,pantoprazole,"['pantoprazole', 'alginic acid + pantoprazole', 'amitriptyline + pantoprazole']",0.7,True,True,True,1.0
 B_resolver_only,typo,side effects of cetirizin,cetrizine,"['cetrizine', 'ambroxol + cetrizine', 'bromhexine + cetrizine']",0.7,True,True,True,1.0
 B_resolver_only,concept,medicine for high blood pressure,['CARDIAC'],[],0.0,False,False,False,0.0
@@ -519,70 +519,70 @@ C_hybrid,brand_very_common,osfutuf,cefuroxime,['cefuroxime'],0.92,True,True,True
 C_hybrid,brand_very_common,nabton d,domperidone + rabeprazole,['domperidone + rabeprazole'],0.98,True,True,True,1.0
 C_hybrid,brand_very_common,glimgos m,glimepiride + metformin,['glimepiride + metformin'],0.92,True,True,True,1.0
 C_hybrid,brand_very_common,glimscan m,glimepiride + metformin,['glimepiride + metformin'],0.92,True,True,True,1.0
-C_hybrid,generic,fenfluramine,fenfluramine,['fenfluramine'],1.0,True,True,True,1.0
-C_hybrid,generic,loperamide,loperamide,"['loperamide', 'beta cyclodextrin + loperamide', 'dicyclomine + loperamide']",1.0,True,True,True,1.0
-C_hybrid,generic,tadalafil,tadalafil,"['tadalafil', 'ambrisentan + tadalafil', 'dapoxetine + tadalafil']",1.0,True,True,True,1.0
-C_hybrid,generic,ondansetron,ondansetron,"['ondansetron', 'omeprazole + ondansetron', 'ondansetron + pantoprazole']",1.0,True,True,True,1.0
-C_hybrid,generic,treosulfan,treosulfan,['treosulfan'],1.0,True,True,True,1.0
-C_hybrid,generic,mercaptopurine,mercaptopurine,['mercaptopurine'],1.0,True,True,True,1.0
-C_hybrid,generic,nitrofurantoin,nitrofurantoin,"['nitrofurantoin', 'cranberry extract + nitrofurantoin']",1.0,True,True,True,1.0
-C_hybrid,generic,repaglinide,repaglinide,"['repaglinide', 'metformin + repaglinide', 'repaglinide + voglibose']",1.0,True,True,True,1.0
-C_hybrid,generic,paroxetine,paroxetine,"['paroxetine', 'clonazepam + paroxetine', 'etizolam + paroxetine']",1.0,True,True,True,1.0
-C_hybrid,generic,norethisterone enanthate,norethisterone enanthate,['norethisterone enanthate'],1.0,True,True,True,1.0
+C_hybrid,generic,amineptine,amineptine,['amineptine'],1.0,True,True,True,1.0
+C_hybrid,generic,cefuroxime axetil,cefuroxime axetil,['cefuroxime axetil'],1.0,True,True,True,1.0
+C_hybrid,generic,nitroglycerin,nitroglycerin,['nitroglycerin'],1.0,True,True,True,1.0
+C_hybrid,generic,magnesium bisglycinate,magnesium bisglycinate,['magnesium bisglycinate'],1.0,True,True,True,1.0
+C_hybrid,generic,tetrabenazine,tetrabenazine,['tetrabenazine'],1.0,True,True,True,1.0
+C_hybrid,generic,dexlansoprazole,dexlansoprazole,['dexlansoprazole'],1.0,True,True,True,1.0
+C_hybrid,generic,clemastine,clemastine,['clemastine'],1.0,True,True,True,1.0
+C_hybrid,generic,mebeverine,mebeverine,"['mebeverine', 'alprazolam + mebeverine', 'chlordiazepoxide + mebeverine']",1.0,True,True,True,1.0
+C_hybrid,generic,rituximab,rituximab,['rituximab'],1.0,True,True,True,1.0
+C_hybrid,generic,ferrous ascorbate,ferrous ascorbate,"['ferrous ascorbate', 'ferrous ascorbate + folic acid', 'ferrous ascorbate + vitamin d']",1.0,True,True,True,1.0
+C_hybrid,generic,dactinomycin,dactinomycin,['dactinomycin'],1.0,True,True,True,1.0
+C_hybrid,generic,etoricoxib,etoricoxib,"['etoricoxib', 'etoricoxib + linseed oil', 'etoricoxib + paracetamol']",1.0,True,True,True,1.0
+C_hybrid,generic,adrenochrome monosemicarbazone,adrenochrome monosemicarbazone,"['adrenochrome monosemicarbazone', 'adrenochrome monosemicarbazone + rutin']",1.0,True,True,True,1.0
+C_hybrid,generic,arsenic trioxide,arsenic trioxide,['arsenic trioxide'],1.0,True,True,True,1.0
+C_hybrid,generic,pramipexole,pramipexole,['pramipexole'],1.0,True,True,True,1.0
+C_hybrid,generic,di iodohydroxyquinoline,di iodohydroxyquinoline,['di iodohydroxyquinoline'],1.0,True,True,True,1.0
+C_hybrid,generic,pyrazinamide,pyrazinamide,"['pyrazinamide', 'isoniazid + pyrazinamide']",1.0,True,True,True,1.0
+C_hybrid,generic,pegylated recombinant human erythropoietin,pegylated recombinant human erythropoietin,['pegylated recombinant human erythropoietin'],1.0,True,True,True,1.0
+C_hybrid,generic,polio vaccine,polio vaccine,['polio vaccine'],1.0,True,True,True,1.0
+C_hybrid,generic,insulin glulisine,insulin glulisine,['insulin glulisine'],1.0,True,True,True,1.0
+C_hybrid,generic,cabozantinib,cabozantinib,['cabozantinib'],1.0,True,True,True,1.0
+C_hybrid,generic,mesalazine,mesalazine,['mesalazine'],1.0,True,True,True,1.0
+C_hybrid,generic,conjugated estrogens,conjugated estrogens,['conjugated estrogens'],1.0,True,True,True,1.0
+C_hybrid,generic,hydroxyethyl starch,hydroxyethyl starch,"['hydroxyethyl starch', 'hydroxyethyl starch + sodium chloride']",1.0,True,True,True,1.0
+C_hybrid,generic,sulbactam,sulbactam,"['sulbactam', 'amoxycillin + sulbactam', 'ampicillin + sulbactam']",1.0,True,True,True,1.0
+C_hybrid,generic,plerixafor,plerixafor,['plerixafor'],1.0,True,True,True,1.0
+C_hybrid,generic,ferrous bisglycinate,ferrous bisglycinate,"['ferrous bisglycinate', 'ferrous bisglycinate + zinc bisglycinate']",1.0,True,True,True,1.0
+C_hybrid,generic,cisplatin,cisplatin,['cisplatin'],1.0,True,True,True,1.0
+C_hybrid,generic,sodium hyaluronate,sodium hyaluronate,"['sodium hyaluronate', 'carboxymethylcellulose + sodium hyaluronate', 'chondroitin + sodium hyaluronate']",1.0,True,True,True,1.0
+C_hybrid,generic,teicoplanin,teicoplanin,['teicoplanin'],1.0,True,True,True,1.0
+C_hybrid,generic,succinyl choline chloride,succinyl choline chloride,['succinyl choline chloride'],1.0,True,True,True,1.0
+C_hybrid,generic,travoprost,travoprost,"['travoprost', 'timolol + travoprost']",1.0,True,True,True,1.0
+C_hybrid,generic,carbocisteine,carbocisteine,"['carbocisteine', 'amoxycillin + carbocisteine', 'carbocisteine + cefalexin']",1.0,True,True,True,1.0
+C_hybrid,generic,pneumococcal polysaccharide conjugate vaccine,pneumococcal polysaccharide conjugate vaccine,['pneumococcal polysaccharide conjugate vaccine'],1.0,True,True,True,1.0
+C_hybrid,generic,calcium polystyrene sulphonate,calcium polystyrene sulphonate,['calcium polystyrene sulphonate'],1.0,True,True,True,1.0
+C_hybrid,generic,kanamycin,kanamycin,['kanamycin'],1.0,True,True,True,1.0
+C_hybrid,generic,potassium magnesium,potassium magnesium,"['potassium magnesium', 'potassium magnesium + vitamin b']",1.0,True,True,True,1.0
+C_hybrid,generic,psoralen,psoralen,['psoralen'],1.0,True,True,True,1.0
+C_hybrid,generic,pipecuronium,pipecuronium,['pipecuronium'],1.0,True,True,True,1.0
+C_hybrid,generic,trazodone,trazodone,['trazodone'],1.0,True,True,True,1.0
+C_hybrid,generic,zafirlukast,zafirlukast,['zafirlukast'],1.0,True,True,True,1.0
+C_hybrid,generic,progesterone,progesterone,['progesterone'],1.0,True,True,True,1.0
+C_hybrid,generic,tocilizumab,tocilizumab,['tocilizumab'],1.0,True,True,True,1.0
+C_hybrid,generic,minocycline,minocycline,['minocycline'],1.0,True,True,True,1.0
+C_hybrid,generic,sofosbuvir,sofosbuvir,"['sofosbuvir', 'daclatasvir + sofosbuvir', 'ledipasvir + sofosbuvir']",1.0,True,True,True,1.0
+C_hybrid,generic,chlorzoxazone,chlorzoxazone,"['chlorzoxazone', 'aceclofenac + chlorzoxazone', 'chlorzoxazone + diclofenac']",1.0,True,True,True,1.0
+C_hybrid,generic,betahistine,betahistine,"['betahistine', 'betahistine + domperidone', 'betahistine + ginkgo biloba']",1.0,True,True,True,1.0
+C_hybrid,generic,parecoxib,parecoxib,['parecoxib'],1.0,True,True,True,1.0
+C_hybrid,generic,amtolmetin guacil,amtolmetin guacil,['amtolmetin guacil'],1.0,True,True,True,1.0
+C_hybrid,generic,ephedrine,ephedrine,"['ephedrine', 'citric acid + ephedrine', 'ephedrine + hydroxyzine']",1.0,True,True,True,1.0
+C_hybrid,generic,levo carnitine,levo carnitine,"['levo carnitine', 'benfotiamine + levo carnitine', 'coenzyme q + levo carnitine']",1.0,True,True,True,1.0
+C_hybrid,generic,carbazochrome,carbazochrome,['carbazochrome'],1.0,True,True,True,1.0
+C_hybrid,generic,polyvinyl alcohol,polyvinyl alcohol,"['polyvinyl alcohol', 'polyethylene glycol + polyvinyl alcohol', 'polyvinyl alcohol + povidone iodine']",1.0,True,True,True,1.0
 C_hybrid,generic,naltrexone,naltrexone,['naltrexone'],1.0,True,True,True,1.0
-C_hybrid,generic,baricitinib,baricitinib,['baricitinib'],1.0,True,True,True,1.0
-C_hybrid,generic,cefpodoxime proxetil,cefpodoxime proxetil,"['cefpodoxime proxetil', 'azithromycin + cefpodoxime proxetil', 'cefpodoxime proxetil + clavulanic acid']",1.0,True,True,True,1.0
-C_hybrid,generic,niacinamide,niacinamide,"['niacinamide', 'clindamycin + niacinamide', 'methylcobalamin + niacinamide']",1.0,True,True,True,1.0
-C_hybrid,generic,bacillus clausii,bacillus clausii,['bacillus clausii'],1.0,True,True,True,1.0
-C_hybrid,generic,doxycycline,doxycycline,"['doxycycline', 'ambroxol + doxycycline', 'bromelain + doxycycline']",1.0,True,True,True,1.0
-C_hybrid,generic,clofazimine,clofazimine,['clofazimine'],1.0,True,True,True,1.0
-C_hybrid,generic,molgramostim,molgramostim,['molgramostim'],1.0,True,True,True,1.0
-C_hybrid,generic,capreomycin,capreomycin,['capreomycin'],1.0,True,True,True,1.0
-C_hybrid,generic,apraclonidine,apraclonidine,['apraclonidine'],1.0,True,True,True,1.0
-C_hybrid,generic,benzonatate,benzonatate,['benzonatate'],1.0,True,True,True,1.0
-C_hybrid,generic,iron sucrose,iron sucrose,['iron sucrose'],1.0,True,True,True,1.0
-C_hybrid,generic,xylitol,xylitol,['xylitol'],1.0,True,True,True,1.0
-C_hybrid,generic,mucopolysaccharide polysulfate,mucopolysaccharide polysulfate,['mucopolysaccharide polysulfate'],1.0,True,True,True,1.0
-C_hybrid,generic,maraviroc,maraviroc,['maraviroc'],1.0,True,True,True,1.0
-C_hybrid,generic,troxerutin,troxerutin,"['troxerutin', 'calcium dobesilate + troxerutin']",1.0,True,True,True,1.0
-C_hybrid,generic,atazanavir,atazanavir,"['atazanavir', 'atazanavir + ritonavir']",1.0,True,True,True,1.0
-C_hybrid,generic,finerenone,finerenone,['finerenone'],1.0,True,True,True,1.0
-C_hybrid,generic,lafutidine,lafutidine,"['lafutidine', 'domperidone + lafutidine']",1.0,True,True,True,1.0
-C_hybrid,generic,ethamsylate,ethamsylate,"['ethamsylate', 'drotaverine + ethamsylate', 'ethamsylate + mefenamic acid']",1.0,True,True,True,1.0
-C_hybrid,generic,galantamine,galantamine,['galantamine'],1.0,True,True,True,1.0
-C_hybrid,generic,ofatumumab,ofatumumab,['ofatumumab'],1.0,True,True,True,1.0
-C_hybrid,generic,silver nano particles,silver nano particles,['silver nano particles'],1.0,True,True,True,1.0
-C_hybrid,generic,vitamin d,vitamin d,"['vitamin d', 'alendronic acid + vitamin d', 'atorvastatin + vitamin d']",1.0,True,True,True,1.0
-C_hybrid,generic,reboxetine,reboxetine,['reboxetine'],1.0,True,True,True,1.0
-C_hybrid,generic,tenecteplase,tenecteplase,['tenecteplase'],1.0,True,True,True,1.0
-C_hybrid,generic,trimebutine,trimebutine,['trimebutine'],1.0,True,True,True,1.0
-C_hybrid,generic,afatinib dimaleate,afatinib dimaleate,['afatinib dimaleate'],1.0,True,True,True,1.0
-C_hybrid,generic,lactulose,lactulose,"['lactulose', 'ispaghula + lactulose']",1.0,True,True,True,1.0
-C_hybrid,generic,besifloxacin,besifloxacin,['besifloxacin'],1.0,True,True,True,1.0
-C_hybrid,generic,altretamine,altretamine,['altretamine'],1.0,True,True,True,1.0
-C_hybrid,generic,aliskiren,aliskiren,"['aliskiren', 'aliskiren + hydrochlorothiazide']",1.0,True,True,True,1.0
-C_hybrid,generic,spiramycin,spiramycin,['spiramycin'],1.0,True,True,True,1.0
-C_hybrid,generic,pimecrolimus,pimecrolimus,['pimecrolimus'],1.0,True,True,True,1.0
-C_hybrid,generic,yellow fever virus,yellow fever virus,['yellow fever virus'],1.0,True,True,True,1.0
-C_hybrid,generic,bupropion,bupropion,['bupropion'],1.0,True,True,True,1.0
-C_hybrid,generic,enoxaparin,enoxaparin,['enoxaparin'],1.0,True,True,True,1.0
-C_hybrid,generic,methoxsalen,methoxsalen,"['methoxsalen', 'aminobenzoic acid + methoxsalen']",1.0,True,True,True,1.0
-C_hybrid,generic,methylergometrine,methylergometrine,['methylergometrine'],1.0,True,True,True,1.0
-C_hybrid,generic,didanosine,didanosine,"['didanosine', 'didanosine + lamivudine']",1.0,True,True,True,1.0
-C_hybrid,generic,itolizumab,itolizumab,['itolizumab'],1.0,True,True,True,1.0
-C_hybrid,generic,amoxycillin,amoxycillin,"['amoxycillin', 'ambroxol + amoxycillin', 'amoxycillin + bromhexine']",1.0,True,True,True,1.0
-C_hybrid,generic,lymecycline,lymecycline,['lymecycline'],1.0,True,True,True,1.0
-C_hybrid,generic,iopamidol,iopamidol,['iopamidol'],1.0,True,True,True,1.0
-C_hybrid,generic,zotepine,zotepine,['zotepine'],1.0,True,True,True,1.0
-C_hybrid,generic,itopride,itopride,"['itopride', 'esomeprazole + itopride', 'itopride + methylpolysiloxane']",1.0,True,True,True,1.0
-C_hybrid,generic,desloratadine,desloratadine,"['desloratadine', 'acebrophylline + desloratadine', 'ambroxol + desloratadine']",1.0,True,True,True,1.0
-C_hybrid,generic,omega fatty acid,omega fatty acid,"['omega fatty acid', 'coenzyme q + omega fatty acid']",1.0,True,True,True,1.0
-C_hybrid,generic,nitrazepam,nitrazepam,['nitrazepam'],1.0,True,True,True,1.0
-C_hybrid,generic,pioglitazone,pioglitazone,"['pioglitazone', 'atorvastatin + pioglitazone', 'gliclazide + pioglitazone']",1.0,True,True,True,1.0
-C_hybrid,typo,side effects of amoxicilin,amoxycillin,"['amoxycillin + serratiopeptidase', 'ambroxol + amoxycillin', 'amoxycillin + pantoprazole']",0.0,False,False,True,0.25
+C_hybrid,generic,carvedilol,carvedilol,"['carvedilol', 'carvedilol + ivabradine']",1.0,True,True,True,1.0
+C_hybrid,generic,acetylcysteine,acetylcysteine,"['acetylcysteine', 'acebrophylline + acetylcysteine', 'acetylcysteine + ambroxol']",1.0,True,True,True,1.0
+C_hybrid,generic,romiplostim,romiplostim,['romiplostim'],1.0,True,True,True,1.0
+C_hybrid,generic,proanthocyanidin,proanthocyanidin,"['proanthocyanidin', 'l arginine + proanthocyanidin', 'polypodium leucotomos extract + proanthocyanidin']",1.0,True,True,True,1.0
+C_hybrid,generic,deca peptide,deca peptide,['deca peptide'],1.0,True,True,True,1.0
+C_hybrid,generic,bisacodyl,bisacodyl,['bisacodyl'],1.0,True,True,True,1.0
+C_hybrid,typo,side effects of amoxicilin,amoxycillin,"['amoxycillin + potassium clavulanate', 'amoxycillin + pantoprazole', 'amoxycillin + dicloxacillin']",0.95,False,False,False,0.0
 C_hybrid,typo,side effects of paracetmol,paracetamol,"['paracetamol', 'oxyphenbutazone + paracetamol', 'paracetamol + tapentadol']",0.7,True,True,True,1.0
 C_hybrid,typo,side effects of metfromin,metformin,"['metformin', 'dapagliflozin + metformin', 'atorvastatin + metformin']",0.7,True,True,True,1.0
-C_hybrid,typo,side effects of azithromicin,azithromycin,"['azithromycin', 'azithromycin + ofloxacin', 'azithromycin + levofloxacin']",0.7,True,True,True,1.0
+C_hybrid,typo,side effects of azithromicin,azithromycin,"['azithromycin + saccharomyces boulardii', 'azithromycin + cefpodoxime proxetil', 'azithromycin + levofloxacin']",0.95,False,False,False,0.0
 C_hybrid,typo,side effects of pantaprazole,pantoprazole,"['pantoprazole', 'chlordiazepoxide + pantoprazole', 'ondansetron + pantoprazole']",0.7,True,True,True,1.0
 C_hybrid,typo,side effects of cetirizin,cetrizine,"['cetrizine', 'bromhexine + cetrizine', 'cetrizine + paracetamol']",0.7,True,True,True,1.0
 C_hybrid,concept,medicine for high blood pressure,['CARDIAC'],"['hydrochlorothiazide + propranolol', 'hydrochlorothiazide + telmisartan', 'hydrochlorothiazide + olmesartan medoxomil']",0.0,True,True,True,1.0

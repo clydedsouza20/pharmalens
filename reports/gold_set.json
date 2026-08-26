@@ -720,62 +720,320 @@
     "judge":"composition"
   },
   {
-    "query":"fenfluramine",
-    "expected":"fenfluramine",
+    "query":"amineptine",
+    "expected":"amineptine",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"loperamide",
-    "expected":"loperamide",
+    "query":"cefuroxime axetil",
+    "expected":"cefuroxime axetil",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"tadalafil",
-    "expected":"tadalafil",
+    "query":"nitroglycerin",
+    "expected":"nitroglycerin",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"ondansetron",
-    "expected":"ondansetron",
+    "query":"magnesium bisglycinate",
+    "expected":"magnesium bisglycinate",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"treosulfan",
-    "expected":"treosulfan",
+    "query":"tetrabenazine",
+    "expected":"tetrabenazine",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"mercaptopurine",
-    "expected":"mercaptopurine",
+    "query":"dexlansoprazole",
+    "expected":"dexlansoprazole",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"nitrofurantoin",
-    "expected":"nitrofurantoin",
+    "query":"clemastine",
+    "expected":"clemastine",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"repaglinide",
-    "expected":"repaglinide",
+    "query":"mebeverine",
+    "expected":"mebeverine",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"paroxetine",
-    "expected":"paroxetine",
+    "query":"rituximab",
+    "expected":"rituximab",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"norethisterone enanthate",
-    "expected":"norethisterone enanthate",
+    "query":"ferrous ascorbate",
+    "expected":"ferrous ascorbate",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"dactinomycin",
+    "expected":"dactinomycin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"etoricoxib",
+    "expected":"etoricoxib",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"adrenochrome monosemicarbazone",
+    "expected":"adrenochrome monosemicarbazone",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"arsenic trioxide",
+    "expected":"arsenic trioxide",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"pramipexole",
+    "expected":"pramipexole",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"di iodohydroxyquinoline",
+    "expected":"di iodohydroxyquinoline",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"pyrazinamide",
+    "expected":"pyrazinamide",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"pegylated recombinant human erythropoietin",
+    "expected":"pegylated recombinant human erythropoietin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"polio vaccine",
+    "expected":"polio vaccine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"insulin glulisine",
+    "expected":"insulin glulisine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"cabozantinib",
+    "expected":"cabozantinib",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"mesalazine",
+    "expected":"mesalazine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"conjugated estrogens",
+    "expected":"conjugated estrogens",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"hydroxyethyl starch",
+    "expected":"hydroxyethyl starch",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"sulbactam",
+    "expected":"sulbactam",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"plerixafor",
+    "expected":"plerixafor",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"ferrous bisglycinate",
+    "expected":"ferrous bisglycinate",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"cisplatin",
+    "expected":"cisplatin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"sodium hyaluronate",
+    "expected":"sodium hyaluronate",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"teicoplanin",
+    "expected":"teicoplanin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"succinyl choline chloride",
+    "expected":"succinyl choline chloride",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"travoprost",
+    "expected":"travoprost",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"carbocisteine",
+    "expected":"carbocisteine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"pneumococcal polysaccharide conjugate vaccine",
+    "expected":"pneumococcal polysaccharide conjugate vaccine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"calcium polystyrene sulphonate",
+    "expected":"calcium polystyrene sulphonate",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"kanamycin",
+    "expected":"kanamycin",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"potassium magnesium",
+    "expected":"potassium magnesium",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"psoralen",
+    "expected":"psoralen",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"pipecuronium",
+    "expected":"pipecuronium",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"trazodone",
+    "expected":"trazodone",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"zafirlukast",
+    "expected":"zafirlukast",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"progesterone",
+    "expected":"progesterone",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"tocilizumab",
+    "expected":"tocilizumab",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"minocycline",
+    "expected":"minocycline",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"sofosbuvir",
+    "expected":"sofosbuvir",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"chlorzoxazone",
+    "expected":"chlorzoxazone",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"betahistine",
+    "expected":"betahistine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"parecoxib",
+    "expected":"parecoxib",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"amtolmetin guacil",
+    "expected":"amtolmetin guacil",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"ephedrine",
+    "expected":"ephedrine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"levo carnitine",
+    "expected":"levo carnitine",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"carbazochrome",
+    "expected":"carbazochrome",
+    "category":"generic",
+    "judge":"composition"
+  },
+  {
+    "query":"polyvinyl alcohol",
+    "expected":"polyvinyl alcohol",
     "category":"generic",
     "judge":"composition"
   },
@@ -786,296 +1044,38 @@
     "judge":"composition"
   },
   {
-    "query":"baricitinib",
-    "expected":"baricitinib",
+    "query":"carvedilol",
+    "expected":"carvedilol",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"cefpodoxime proxetil",
-    "expected":"cefpodoxime proxetil",
+    "query":"acetylcysteine",
+    "expected":"acetylcysteine",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"niacinamide",
-    "expected":"niacinamide",
+    "query":"romiplostim",
+    "expected":"romiplostim",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"bacillus clausii",
-    "expected":"bacillus clausii",
+    "query":"proanthocyanidin",
+    "expected":"proanthocyanidin",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"doxycycline",
-    "expected":"doxycycline",
+    "query":"deca peptide",
+    "expected":"deca peptide",
     "category":"generic",
     "judge":"composition"
   },
   {
-    "query":"clofazimine",
-    "expected":"clofazimine",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"molgramostim",
-    "expected":"molgramostim",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"capreomycin",
-    "expected":"capreomycin",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"apraclonidine",
-    "expected":"apraclonidine",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"benzonatate",
-    "expected":"benzonatate",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"iron sucrose",
-    "expected":"iron sucrose",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"xylitol",
-    "expected":"xylitol",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"mucopolysaccharide polysulfate",
-    "expected":"mucopolysaccharide polysulfate",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"maraviroc",
-    "expected":"maraviroc",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"troxerutin",
-    "expected":"troxerutin",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"atazanavir",
-    "expected":"atazanavir",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"finerenone",
-    "expected":"finerenone",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"lafutidine",
-    "expected":"lafutidine",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"ethamsylate",
-    "expected":"ethamsylate",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"galantamine",
-    "expected":"galantamine",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"ofatumumab",
-    "expected":"ofatumumab",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"silver nano particles",
-    "expected":"silver nano particles",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"vitamin d",
-    "expected":"vitamin d",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"reboxetine",
-    "expected":"reboxetine",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"tenecteplase",
-    "expected":"tenecteplase",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"trimebutine",
-    "expected":"trimebutine",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"afatinib dimaleate",
-    "expected":"afatinib dimaleate",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"lactulose",
-    "expected":"lactulose",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"besifloxacin",
-    "expected":"besifloxacin",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"altretamine",
-    "expected":"altretamine",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"aliskiren",
-    "expected":"aliskiren",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"spiramycin",
-    "expected":"spiramycin",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"pimecrolimus",
-    "expected":"pimecrolimus",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"yellow fever virus",
-    "expected":"yellow fever virus",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"bupropion",
-    "expected":"bupropion",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"enoxaparin",
-    "expected":"enoxaparin",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"methoxsalen",
-    "expected":"methoxsalen",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"methylergometrine",
-    "expected":"methylergometrine",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"didanosine",
-    "expected":"didanosine",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"itolizumab",
-    "expected":"itolizumab",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"amoxycillin",
-    "expected":"amoxycillin",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"lymecycline",
-    "expected":"lymecycline",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"iopamidol",
-    "expected":"iopamidol",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"zotepine",
-    "expected":"zotepine",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"itopride",
-    "expected":"itopride",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"desloratadine",
-    "expected":"desloratadine",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"omega fatty acid",
-    "expected":"omega fatty acid",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"nitrazepam",
-    "expected":"nitrazepam",
-    "category":"generic",
-    "judge":"composition"
-  },
-  {
-    "query":"pioglitazone",
-    "expected":"pioglitazone",
+    "query":"bisacodyl",
+    "expected":"bisacodyl",
     "category":"generic",
     "judge":"composition"
   },

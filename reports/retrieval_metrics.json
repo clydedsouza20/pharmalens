@@ -2,23 +2,23 @@
   "overall": {
     "recall@1": {
       "A_semantic_only": 39.5,
-      "B_resolver_only": 93.0,
-      "C_hybrid": 96.0
+      "B_resolver_only": 92.5,
+      "C_hybrid": 95.5
     },
     "recall@3": {
-      "A_semantic_only": 44.0,
-      "B_resolver_only": 96.0,
-      "C_hybrid": 99.0
+      "A_semantic_only": 44.5,
+      "B_resolver_only": 96.5,
+      "C_hybrid": 98.5
     },
     "recall@5": {
       "A_semantic_only": 47.5,
-      "B_resolver_only": 96.0,
-      "C_hybrid": 99.5
+      "B_resolver_only": 96.5,
+      "C_hybrid": 98.5
     },
     "MRR": {
-      "A_semantic_only": 42.2,
-      "B_resolver_only": 94.3,
-      "C_hybrid": 97.5
+      "A_semantic_only": 42.3,
+      "B_resolver_only": 94.2,
+      "C_hybrid": 96.8
     }
   },
   "by_category": {
@@ -40,7 +40,7 @@
       "brand_very_common": 100.0,
       "concept": 25.0,
       "generic": 100.0,
-      "typo": 83.3
+      "typo": 100.0
     },
     "C_hybrid": {
       "absent": 83.3,
@@ -50,7 +50,7 @@
       "brand_very_common": 100.0,
       "concept": 100.0,
       "generic": 100.0,
-      "typo": 100.0
+      "typo": 66.7
     }
   },
   "n_cases": 200

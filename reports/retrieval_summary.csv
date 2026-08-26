@@ -1,4 +1,4 @@
 config,recall@1,recall@3,recall@5,MRR
-A_semantic_only,39.5,44.0,47.5,42.2
-B_resolver_only,93.0,96.0,96.0,94.3
-C_hybrid,96.0,99.0,99.5,97.5
+A_semantic_only,39.5,44.5,47.5,42.3
+B_resolver_only,92.5,96.5,96.5,94.2
+C_hybrid,95.5,98.5,98.5,96.8
