@@ -1,0 +1,11 @@
+﻿data/raw/
+data/processed/*.npy
+.venv/
+venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+reports/
+*.md
+notebooks/
