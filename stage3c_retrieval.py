@@ -17,8 +17,8 @@ identity resolution at all.
 WHAT 3d MEASURED (200-case gold set, recall@5)
 ----------------------------------------------
     A  semantic only    47.5%     perfect on concepts, 13% on brands
-    B  resolver only    93.0%     perfect on brands, 25% on concepts
-    C  hybrid           98.0%     each component covers the other's blind spot
+    B  resolver only    96.0%     perfect on brands, 25% on concepts
+    C  hybrid           99.5%     each covers the other's blind spot
 
 The hybrid does not win by being uniformly better. It wins because the
 resolver and the embedding fail in exactly opposite places.
@@ -41,30 +41,37 @@ FIX LOG
 -------
   v2, from reading v1's output:
     1. FUZZY HIJACK -- 'medicine for high blood pressure' fuzzy-matched
-       'medicine' to a brand called 'Medicaine' and filtered a clean
-       semantic query down to one antacid. Fixed by adding ~50 stopwords
-       and restricting fuzzy matching to the 1,640 ingredient names.
-       NOTE: raising the cutoff was NOT what fixed this. 'medicine' vs
-       'medicaine' scores ~0.94, HIGHER than the real typo 'amoxicilin'
-       vs 'amoxycillin' (~0.88). No threshold separates them. Shrinking
-       the SEARCH SPACE fixed it; tightening the THRESHOLD only broke
-       genuine typo handling. The cutoff is back at 0.86 in v3.
-    2. SINGLE-LETTER TOKENS -- 'Pan D' became 'pan', leaking 'd' into the
-       aspect. Single letters are meaningful in Indian brand names: Pan D,
-       Zifi O, Monocef O.
-    3. EXACT COMPOSITION LOST TO ITS COMBINATIONS -- 'amlodipine' ranked
-       amlodipine + chlorthalidone first. Exact now scores 1.00,
-       containing-combinations 0.90, and ranking is confidence-first.
+       'medicine' to a brand called 'Medicaine'. Fixed by adding ~50
+       stopwords and restricting fuzzy matching to ingredient names.
+       NOTE: raising the cutoff was NOT the fix. 'medicine' vs 'medicaine'
+       scores ~0.94, HIGHER than the real typo 'amoxicilin' vs
+       'amoxycillin' (0.857). No threshold separates them. Shrinking the
+       SEARCH SPACE fixed it; tightening the THRESHOLD only broke genuine
+       typo handling.
+    2. SINGLE-LETTER TOKENS -- 'Pan D' became 'pan'. Single letters are
+       meaningful in Indian brand names: Pan D, Zifi O, Monocef O.
+    3. EXACT COMPOSITION LOST TO ITS COMBINATIONS -- exact now scores
+       1.00, containing-combinations 0.90, ranking is confidence-first.
 
-  v3, from the 3d evaluation's failure list:
+  v3, from the 3d failure list:
     4. SHORT-CIRCUIT ON AMBIGUOUS BRANDS -- 'noxprin' hit by_product
        (ozenoxacin) and the if/elif chain never checked by_stem
-       (enoxaparin). All three indexes are now unioned, so ambiguous
-       brands surface every candidate instead of silently picking one.
+       (enoxaparin). All indexes are now unioned.
     5. LONG GENERIC NAMES UNREACHABLE -- 'methoxy polyethylene glycol
-       epoetin beta' is six words; max span length was four, so the full
-       name was never tried. Raised to eight.
-    6. FUZZY CUTOFF RESTORED to 0.86 (see note under fix 1).
+       epoetin beta' is six words; max span was four. Raised to eight.
+    6. FUZZY CUTOFF restored to 0.86.
+
+  v4, from the stage 4 routing test:
+    7. SPELLING VARIANTS ARE NOT TYPOS -- 'amoxicilin' vs 'amoxycillin'
+       scores 0.857, three thousandths under the 0.86 cutoff. Lowering
+       the cutoff would be tuning a brittle number. The real point is
+       that amoxycillin/amoxicillin are the SAME WORD: the y/i swap is a
+       systematic transliteration convention in drug nomenclature, as are
+       ph/f, ae/e and doubled consonants. A variant index handles this as
+       an EXACT lookup on a normalised key -- still deterministic, still
+       incapable of drifting, unlike a similarity threshold. Confidence
+       0.95, above the answer threshold, because a spelling variant is
+       the same drug rather than a guess.
 
 USAGE
 -----
@@ -94,8 +101,8 @@ COLLECTION = "pharmalens_compositions"
 # ('methoxy polyethylene glycol epoetin beta'), so four was too short.
 MAX_SPAN_LEN = 8
 
-# Fuzzy matching is for genuine typos only. See fix 1 in the docstring for
-# why this is 0.86 and not something stricter.
+# Fuzzy matching is for genuine typos only. See fix 1 for why this is
+# 0.86 and not something stricter.
 FUZZY_CUTOFF = 0.86
 
 
@@ -141,6 +148,7 @@ QUESTION_WORDS = {
 
 _NONALNUM = re.compile(r"[^a-z0-9\s]")
 _WS = re.compile(r"\s+")
+_DOUBLE = re.compile(r"(.)\1+")
 
 
 # ==========================================================================
@@ -183,6 +191,36 @@ def brand_stem(raw):
     return " ".join(toks)
 
 
+def variant_key(raw):
+    """Collapse systematic spelling variants in drug nomenclature (fix 7).
+
+    'amoxycillin' and 'amoxicillin' are the same drug spelled two ways.
+    So are cyclosporin/ciclosporin, sulphate/sulfate, cephalexin/
+    cefalexin. These are transliteration conventions -- British vs
+    American, Latin vs anglicised -- not typos, and generic string
+    similarity cannot tell the difference: 'amoxicilin' vs 'amoxycillin'
+    scores 0.857 on difflib, three thousandths under a 0.86 cutoff.
+
+    Normalising to a canonical form turns this into an EXACT dictionary
+    lookup. That matters: exact lookups cannot drift the way a
+    similarity threshold does. Domain knowledge, applied deterministically.
+
+        amoxycillin  -> amoxicilin
+        amoxicillin  -> amoxicilin
+        amoxicilin   -> amoxicilin
+        sulphate     -> sulfate
+        cyclosporin  -> ciclosporin
+    """
+    s = norm_text(raw)
+    s = s.replace("ph", "f")       # sulphate  -> sulfate
+    s = s.replace("y", "i")        # amoxycillin -> amoxicillin
+    s = s.replace("ae", "e")       # haemo-    -> hemo-
+    s = s.replace("oe", "e")       # oestrogen -> estrogen
+    s = s.replace("k", "c")        # -kacin    -> -cacin
+    s = _DOUBLE.sub(r"\1", s)      # cillin    -> cilin
+    return s.strip()
+
+
 # ==========================================================================
 # Stage 1: the resolver
 # ==========================================================================
@@ -190,17 +228,18 @@ def brand_stem(raw):
 class DrugResolver:
     """Maps free text to composition keys by EXACT LOOKUP, never similarity.
 
-    Four indexes, with confidence reflecting how direct the evidence is:
+    Five indexes, with confidence reflecting how direct the evidence is:
         ingredient (exact)      'amlodipine'  -> amlodipine          1.00
-        ingredient (contained)  'amlodipine'  -> amlodipine+atenolol 0.90
         full product name       'crocin 500'  -> paracetamol         0.98
+        spelling variant        'amoxicilin'  -> amoxycillin         0.95
         brand stem              'crocin'      -> paracetamol         0.92
-        fuzzy fallback          'amoxicilin'  -> amoxycillin         0.70
+        ingredient (contained)  'amlodipine'  -> amlodipine+atenolol 0.90
+        fuzzy fallback          'metfromin'   -> metformin           0.70
 
-    All three exact indexes are checked and UNIONED (fix 4). An earlier
-    if/elif chain short-circuited: 'noxprin' matched a product mapping to
-    ozenoxacin and never checked the brand stem mapping to enoxaparin.
-    Ambiguous brands must surface every candidate.
+    The first five are exact dictionary hits and are UNIONED (fix 4): an
+    earlier if/elif chain short-circuited, so 'noxprin' matched a product
+    mapping to ozenoxacin and never checked the brand stem mapping to
+    enoxaparin. Ambiguous brands must surface every candidate.
 
     Fuzzy matching runs LAST and only against the 1,640 ingredient names.
     It is the one step that can fail the way 3b warned about.
@@ -210,6 +249,7 @@ class DrugResolver:
         self.by_ingredient = defaultdict(set)
         self.by_product = defaultdict(set)
         self.by_stem = defaultdict(set)
+        self.by_variant = defaultdict(set)
         self.valid_compositions = set(docs["composition_key"])
 
         # --- ingredients, taken from the composition keys themselves ----
@@ -218,6 +258,14 @@ class DrugResolver:
                 p = part.strip()
                 if p:
                     self.by_ingredient[p].add(ck)
+
+        # --- spelling variants (fix 7) ----------------------------------
+        # Same lookup discipline as the exact indexes, just with a
+        # normalised key. NOT fuzzy matching: still an exact hit.
+        for ing, cks in self.by_ingredient.items():
+            vk = variant_key(ing)
+            if vk:
+                self.by_variant[vk].update(cks)
 
         # --- brands, from ALL products, not the truncated 50-brand list -
         sub = products[["name", "composition_key"]].dropna()
@@ -260,7 +308,7 @@ class DrugResolver:
             if all(t in QUESTION_WORDS for t in span.split()):
                 continue
 
-            # --- union across ALL THREE indexes (fix 4) -----------------
+            # --- union across ALL exact indexes (fix 4) -----------------
             matches = []
             if span in self.by_ingredient:
                 # Exact composition outranks combinations that merely
@@ -273,6 +321,13 @@ class DrugResolver:
             if span in self.by_stem:
                 matches += [(ck, "brand_stem", 0.92)
                             for ck in sorted(self.by_stem[span])]
+
+            # --- spelling variant, only if nothing exact hit (fix 7) ----
+            if not matches:
+                vk = variant_key(span)
+                if vk and vk in self.by_variant:
+                    matches += [(ck, "spelling_variant", 0.95)
+                                for ck in sorted(self.by_variant[vk])]
 
             if matches:
                 for ck, method, conf in matches:
@@ -354,13 +409,18 @@ class PharmaLensRetriever:
 
             top_conf = max(c for *_, c in resolved)
             primary = [ck for ck, _, _, c in resolved if c == top_conf]
-            # More than one composition tied at the top confidence means a
-            # genuinely ambiguous brand. The caller must show this rather
-            # than pretend one answer was certain.
-            result["ambiguous"] = len(primary) > 1
+
+            # Ambiguity means one BRAND span maps to several compositions.
+            # The ingredient hierarchy (exact 1.00 vs contained 0.90) is a
+            # hierarchy, not ambiguity, so ingredient methods are excluded.
+            top_span = resolved[0][1]
+            brandish = {ck for ck, span, m, _ in resolved
+                        if span == top_span
+                        and m in ("product_name", "brand_stem")}
+            result["ambiguous"] = len(brandish) > 1
             if result["ambiguous"]:
-                result["note"] = (f"'{resolved[0][1]}' matches "
-                                  f"{len(primary)} different compositions")
+                result["note"] = (f"'{top_span}' matches "
+                                  f"{len(brandish)} different compositions")
 
             # Nothing left to rank on -> return by identity alone.
             if not aspect or len(aspect) < 4:
@@ -435,11 +495,12 @@ def main():
     # ------------------------------------------------- build the resolver
     print(f"\n{'=' * 76}\n2. RESOLVER (stage 1: identity)\n{'=' * 76}")
     resolver = DrugResolver(products, docs)
-    print(f"  ingredient entries : {len(resolver.by_ingredient):,}")
-    print(f"  full product names : {len(resolver.by_product):,}")
-    print(f"  brand stems        : {len(resolver.by_stem):,}")
-    print(f"  max span length    : {MAX_SPAN_LEN} words")
-    print(f"  fuzzy cutoff       : {FUZZY_CUTOFF}")
+    print(f"  ingredient entries  : {len(resolver.by_ingredient):,}")
+    print(f"  spelling variants   : {len(resolver.by_variant):,}")
+    print(f"  full product names  : {len(resolver.by_product):,}")
+    print(f"  brand stems         : {len(resolver.by_stem):,}")
+    print(f"  max span length     : {MAX_SPAN_LEN} words")
+    print(f"  fuzzy cutoff        : {FUZZY_CUTOFF}")
     print("\n  Exact-match dictionaries only. The crocin -> crotamiton")
     print("  failure from 3b is structurally impossible here, because no")
     print("  similarity is computed during identity resolution.")
@@ -533,11 +594,13 @@ def main():
         ("how much does amlodipine cost",
          "fix 3: plain amlodipine ranks FIRST, above its combinations"),
         ("noxprin",
-         "fix 4: must surface enoxaparin, not only ozenoxacin"),
+         "fix 4: must surface BOTH ozenoxacin and enoxaparin -> ambiguous"),
         ("methoxy polyethylene glycol epoetin beta",
          "fix 5: six-word generic name must resolve whole"),
         ("side effects of metfromin",
-         "fix 6: typo must reach metformin via fuzzy at 0.86"),
+         "fix 6: typo reaches metformin via fuzzy at 0.86"),
+        ("what are the side effects of amoxicilin",
+         "fix 7: spelling variant -> amoxycillin at 0.95, NOT fuzzy 0.70"),
     ]
     for q, expectation in REGRESSIONS:
         res = retriever.query(q, k=3)
@@ -578,38 +641,38 @@ def main():
     # ==================================================================
     print(f"\n{'=' * 76}\n7. WHAT RETRIEVAL STILL CANNOT FIX\n{'=' * 76}")
     print("""
-  These are stage 4's job -- the prompt, not the index:
+  These are stage 4's job -- the router and the prompt, not the index:
 
     NOTHING RESOLVED   'side effects of flibanserin' falls through to
                        semantic mode and returns confident-looking but
-                       WRONG documents. The prompt must refuse on low
-                       confidence rather than summarise whatever came
-                       back. Absence of data is not evidence of safety.
+                       WRONG documents. Stage 4 refuses on low confidence
+                       rather than summarising whatever came back.
+                       Absence of data is not evidence of safety.
 
     MULTI-DRUG         'Augmentin and Azithral together' resolves two
                        compositions, but this corpus has NO drug-drug
-                       interaction data. The honest answer describes each
-                       drug and states plainly that the combination cannot
-                       be assessed from these sources.
+                       interaction data. Stage 4 routes to PARTIAL.
 
-    AMBIGUOUS BRAND    result['ambiguous'] is now set when one brand maps
-                       to several compositions. The prompt must surface
-                       that, never silently pick one.
+    AMBIGUOUS BRAND    result['ambiguous'] is set when one brand span maps
+                       to several compositions via the brand indexes.
+                       Stage 4 routes to CLARIFY and asks.
 
-    LOW CONFIDENCE     a fuzzy match at 0.70 must be stated as an
-                       assumption: 'assuming you meant amoxycillin'.
+    ESKETAMINE         a fuzzy hit at 0.70 may be a real, different drug
+                       rather than a typo. No cutoff separates those two
+                       cases. Stage 4 routes to ASSUME and says so.
 """)
 
     with open(proc / "resolver_stats.json", "w") as f:
         json.dump({"ingredients": len(resolver.by_ingredient),
+                   "spelling_variants": len(resolver.by_variant),
                    "products": len(resolver.by_product),
                    "brand_stems": len(resolver.by_stem),
                    "documents": len(docs),
                    "max_span_len": MAX_SPAN_LEN,
                    "fuzzy_cutoff": FUZZY_CUTOFF}, f, indent=2)
 
-    print(f"{'=' * 76}\nNow rerun stage3d_evaluate.py and compare to")
-    print("47.5 / 93.0 / 98.0 recall@5.")
+    print(f"{'=' * 76}\nNow rerun stage4_answer.py and stage3d_evaluate.py.")
+    print("Compare to 47.5 / 96.0 / 99.5 recall@5 and 10/12 routing.")
     print(f"{'=' * 76}\n")
 
 
