@@ -1,0 +1,237 @@
+# PharmaLens - Kubernetes manifests
+#
+# Same container that ran on ECS Fargate, expressed as Kubernetes objects.
+# The comments map each field back to its ECS equivalent, because the
+# concepts are the same and only the vocabulary changes.
+#
+#   ECS task definition  ->  Deployment (pod template)
+#   ECS task             ->  Pod
+#   ECS service          ->  Deployment (replica management)
+#   Target group / ALB   ->  Service
+#   healthCheck          ->  liveness + readiness + startup probes
+#   startPeriod          ->  startupProbe
+#   cpu / memory         ->  resources.requests + resources.limits
+#
+# APPLY
+#   kubectl apply -f k8s/pharmalens.yaml
+#   kubectl get pods -w
+#   kubectl port-forward svc/pharmalens 8080:80
+#
+# TEAR DOWN
+#   kubectl delete -f k8s/pharmalens.yaml
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: pharmalens
+  labels:
+    app.kubernetes.io/name: pharmalens
+
+---
+# ConfigMap: non-secret configuration, decoupled from the image.
+# Changing a value here does not require a rebuild -- the ECS equivalent
+# would be container environment overrides in the task definition.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pharmalens-config
+  namespace: pharmalens
+data:
+  PORT: "8080"
+  EMBEDDING_MODEL_PATH: "/app/models/all-MiniLM-L6-v2"
+  HF_HUB_OFFLINE: "1"
+  TRANSFORMERS_OFFLINE: "1"
+  TOKENIZERS_PARALLELISM: "false"
+
+---
+# Secret: created separately so the key never enters version control.
+#
+#   kubectl create secret generic pharmalens-secrets \
+#     --from-literal=ANTHROPIC_API_KEY=sk-ant-... \
+#     -n pharmalens
+#
+# The deployment references it with optional: true, so the service starts
+# fine without it -- generation is disabled, routing still works. The
+# safety guarantees live in the router, not the model.
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pharmalens
+  namespace: pharmalens
+  labels:
+    app: pharmalens
+spec:
+  # One replica: the model and indexes sit in process memory, so each pod
+  # holds ~1.2GB. Two replicas double the memory for no throughput gain at
+  # this scale. Scale out only if request concurrency demands it.
+  replicas: 1
+
+  # The selector tells the Deployment which pods it owns. It MUST match the
+  # pod template labels below. A mismatch is silent: the Deployment creates
+  # pods it does not recognise and then creates more, forever.
+  selector:
+    matchLabels:
+      app: pharmalens
+
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1          # one extra pod during a rollout
+      maxUnavailable: 0    # never drop below the desired count
+
+  template:
+    metadata:
+      labels:
+        app: pharmalens
+    spec:
+      # Match the Dockerfile's non-root user. Kubernetes enforces this at
+      # the platform level rather than trusting the image.
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        fsGroup: 1000
+
+      # Give the process time to shut down cleanly. The exec-form CMD in
+      # the Dockerfile means uvicorn is PID 1 and receives SIGTERM directly.
+      terminationGracePeriodSeconds: 30
+
+      containers:
+        - name: api
+          image: pharmalens:local
+
+          # Never: use the image already in the local Docker daemon.
+          # Without this, Kubernetes tries to pull `pharmalens:local` from
+          # Docker Hub, fails, and the pod sits in ImagePullBackOff. This
+          # is the single most common local-cluster mistake.
+          imagePullPolicy: Never
+
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+
+          envFrom:
+            - configMapRef:
+                name: pharmalens-config
+            - secretRef:
+                name: pharmalens-secrets
+                optional: true      # runs fine without it
+
+          # requests = what the scheduler reserves and guarantees
+          # limits   = the hard ceiling; exceeding memory means an OOM kill
+          #
+          # ECS gives one number for each. Kubernetes splits them, which
+          # lets you overcommit a node. Here they are set close together
+          # because the footprint is predictable and eviction under memory
+          # pressure would be worse than the lost density.
+          resources:
+            requests:
+              cpu: "500m"        # 0.5 core -- enough to serve
+              memory: "2Gi"
+            limits:
+              cpu: "2000m"       # burst to 2 cores during startup
+              memory: "3Gi"      # matches the Fargate allocation
+
+          # --- THREE PROBES, THREE DIFFERENT QUESTIONS -------------------
+          #
+          # ECS has one health check. Kubernetes separates the concerns,
+          # and conflating them is the classic production bug.
+
+          # STARTUP: "has it finished booting?"
+          # Until this passes, the other two probes are suspended. The
+          # direct equivalent of ECS startPeriod. 30 x 10s = 5 minutes of
+          # grace; local boot is ~10s, but the resolver builds four
+          # dictionaries over 253,969 products and a loaded node is slower.
+          startupProbe:
+            httpGet:
+              path: /health
+              port: http
+            periodSeconds: 10
+            failureThreshold: 30
+            timeoutSeconds: 5
+
+          # READINESS: "should traffic go here?"
+          # A failing readiness probe removes the pod from the Service
+          # endpoints. It does NOT restart it. This is what you want when a
+          # pod is briefly overloaded -- stop sending it work, let it
+          # recover.
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: http
+            periodSeconds: 10
+            failureThreshold: 3
+            timeoutSeconds: 5
+
+          # LIVENESS: "is it wedged and unrecoverable?"
+          # A failing liveness probe RESTARTS the container. Deliberately
+          # less sensitive than readiness: 5 consecutive failures over 100
+          # seconds. Making liveness as aggressive as readiness means a
+          # momentarily slow pod gets killed instead of merely drained --
+          # which turns a blip into a restart loop.
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: http
+            periodSeconds: 20
+            failureThreshold: 5
+            timeoutSeconds: 5
+
+---
+# Service: a stable name and IP in front of pods that come and go.
+#
+# Pods get new IPs on every restart. The Service gives clients one address
+# and load-balances across whichever pods are currently READY -- readiness,
+# not liveness, decides membership.
+#
+# ClusterIP is internal-only. Reach it with:
+#   kubectl port-forward svc/pharmalens 8080:80 -n pharmalens
+#
+# Change to NodePort to expose it on the host directly, or LoadBalancer on
+# a cloud cluster (which provisions a real load balancer and bills for it).
+apiVersion: v1
+kind: Service
+metadata:
+  name: pharmalens
+  namespace: pharmalens
+  labels:
+    app: pharmalens
+spec:
+  type: ClusterIP
+  selector:
+    app: pharmalens      # must match the pod labels, not the Deployment name
+  ports:
+    - name: http
+      port: 80           # the port the Service listens on
+      targetPort: http   # the named container port -- 8080
+      protocol: TCP
+
+---
+# HorizontalPodAutoscaler: scales replicas on observed CPU.
+#
+# Commented out because it needs metrics-server, which Docker Desktop does
+# not ship by default, and because one pod holds ~1.2GB -- scaling to 4 on
+# a laptop will not end well. Included to show the shape.
+#
+# apiVersion: autoscaling/v2
+# kind: HorizontalPodAutoscaler
+# metadata:
+#   name: pharmalens
+#   namespace: pharmalens
+# spec:
+#   scaleTargetRef:
+#     apiVersion: apps/v1
+#     kind: Deployment
+#     name: pharmalens
+#   minReplicas: 1
+#   maxReplicas: 4
+#   metrics:
+#     - type: Resource
+#       resource:
+#         name: cpu
+#         target:
+#           type: Utilization
+#           averageUtilization: 70
